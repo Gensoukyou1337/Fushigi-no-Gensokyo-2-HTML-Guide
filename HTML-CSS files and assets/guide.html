@@ -1,0 +1,4402 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<META http-equiv="Content-Type" contentType="text/html; charset=EUC-JP">
+	<title>Fushigi no Gensokyo 2 Miracle Party HTML Guide</title>
+	<link rel="stylesheet" type="text/css" href="customstyle.css">
+</head>
+
+<body>
+	<h1><a name="CONTENTS">Table of Contents</a></h1>
+	<ol>
+		<li><a href="#VERHISTORY">Version History</a></li>
+		<li><a href="#INTRO">Introduction</a></li>
+		<li><a href="#TIPS">Gameplay Tips</a></li>
+		<li><a href="#STORY">Story</a></li>
+		<li><a href="#CHARS">Characters</a></li>
+		<li><a href="#WEAPONS">Weapons (Vanilla)</a></li>
+		<li><a href="#WEAPONSPLUS">Weapons (Plus)</a></li>
+		<li><a href="#ARMOR">Armor (Vanilla)</a></li>
+		<li><a href="#ARMORPLUS">Armor (Plus)</a></li>
+		<li><a href="#ACCESSORIES">Accessories (Vanilla)</a></li>
+		<li><a href="#ACCESSORIESPLUS">Accessories (Plus)</a></li>
+		<li><a href="#ORBSVANILLA">Orbs (Vanilla)</a></li>
+		<li><a href="#ORBSPLUS">Orbs (Plus)</a></li>
+	</ol>
+<hr />
+	<h1><a name="VERHISTORY">Version History</a></h1>
+	<p>
+		v1.00: Initial Upload
+	</p>
+<hr />
+	<h1><a name="INTRO">Introduction</a></h1>
+	<p class="intro">The information in the following table is taken from <a href="http://en.touhouwiki.net/wiki/Miracle_Party_-Fushigi_no_Gensokyo_2-">this Touhou Wiki page</a></p>
+	<table id="infotable">
+	<tr>
+		<th>Title</th>
+		<td>不思議の幻想郷２～ミラクル☆パーティー</td>
+	</tr>
+	<tr>
+		<th>Developer</th>
+		<td>AQUASTYLE</td>
+	</tr>
+	<tr>
+		<th>Publisher</th>
+		<td>AQUASTYLE</td>
+	</tr>
+	<tr>
+		<th>Release Date</th>
+		<td>30 December 2011 (Comiket 81)</td>
+	</tr>
+	<tr>
+		<th>Genre</th>
+		<td>Roguelike</td>
+	</tr>
+	<tr>
+		<th>Gameplay</th>
+		<td>Single Player Story</td>
+	</tr>
+	<tr>
+		<th>Platform</th>
+		<td>Windows<sup>[1]</sup></td>
+	</tr>
+	</table>
+	<p>
+		<b>'tis the season of the roguelikes / fa la la la la, la la la la!</b>
+	</p>
+	<p>
+		Yes, roguelikes are coming back, people, heralded by "FTL -Faster Than Light-".<br>
+		Now I haven't played it personally, but since it's returning, I feel as if I have to make a guide for a roguelike I like.<br>
+		My personal history with roguelikes started with Chocobo's Mysterious Dungeon 2 for the PS1. Back then, I didn't really know what I was supposed to do.<br>
+		However, after learning a bit about its mechanics and with a little bit of luck, I managed to defeat its final boss.<br>
+		Since then, though, I didn't play any roguelikes. Mainly because there's a drought of it for the consoles.<br>
+		I mean, the second roguelike I played was the Doom Roguelike that's a bit like Dwarf Fortress. I didn't finish it.<br>
+		I came to like Touhou Project back in around 2005, and since then I've been searching for good fangames.<br>
+		Long story short, I first discovered "Motto! Fushigi no Gensokyo ~Under The Moonlight~", then "Fushigi no Gensokyo 2: Miracle Party".<br>
+		I like FnG2 more because it's more newbie-friendly.<br>
+		Anyway... this guide will be based on my own experience playing in version 1.56, and assumes you already know the basic movements.<br>
+		You can fill in the gaps with Google Translate and <a href="http://wikiwiki.jp/miracleparty/">this wiki</a>.<br>
+	</p>
+	<p>
+		How to get it:<br>
+		<ol>
+			<li>Download the vanilla/unpatched game from <a href="http://doujinstyle.com/?p=2235">Doujinstyle</a></li>
+			<li>Get the v1.00-->v1.33 patch from <a href="http://www.aquastyle.org/mirapa/mirapa_down.html">AQUASTYLE's official website</a> and install it</li>
+			<li><a href="http://doujinstyle.com/?p=4247">Return to Doujinstyle and download the Expansion Pack</a></li>
+			<li>Get the v1.50-->v1.56 patch from <a href="http://www.aquastyle.org/mirapa/mirapa_plus.html">here</a> and install it</li>
+		</ol>
+	</p>
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+	<hr size="1" width="90%" />
+	<p>
+	[1]: One may be able to play it in Linux using WINE, but specific configurations may be required.
+	</p>
+<hr />
+	<h1><a name="TIPS">Gameplay Tips</a></h1>
+	<h2>Contents</h2>
+	<ol>
+		<li><a href="#TIPSposition">Positioning</a></li>
+		<li><a href="#TIPSsavescum">Save Scumming</a></li>
+		<li><a href="#TIPSdlayouts">Dungeon Layouts</a></li>
+		<li><a href="#TIPSmysteryd">Regarding Dungeons With Unidentified Items</a></li>
+	</ol>
+	<h2><a name="TIPSposition">Positioning</a></h2>
+	<p>
+		Assume that 'O' is the player and 'X' is the target enemy.<br>
+		If you don't want your target enemy to hit you before you can hit them, make sure the space between you and that enemy is of even numbers.<br>
+		Turn 1: [O][ ][ ][X] O moves right, X responds by moving left.<br>
+		Turn 2: [ ][O][X][ ]<br>
+		That way, you can attack first. However, if the space between you and that enemy is of odd numbers...<br>
+		Turn 1: [O][ ][X] O moves right, but X doesn't move.<br>
+		Turn 2: [ ][O][X]<br>
+		The enemy attacks first.<br>
+		However, if you strafe to the enemy's right...<br>
+		Turn 1:<br>
+		[O][ ][X]<br>
+		[ ][ ][ ]<br>
+		O moves down, X responds by moving diagonally down left.<br>
+		Turn 2:<br>
+		[ ][ ][ ]<br>
+		[O][X][ ]<br>
+		You can still attack first.<br>
+	</p>
+	<p>
+		If your enemy has a ranged attack with long range like Eirin, strafe to her left and right to bring her closer. Then strike.<br>
+		Turn 1:<br>
+		[O][ ][ ][ ][ ][ ][X]<br>
+		[ ][ ][ ][ ][ ][ ][ ]<br>
+		Turn 2:<br>
+		[ ][ ][ ][ ][ ][ ][ ]<br>
+		[ ][O][ ][ ][ ][X][ ]<br>
+		Turn 3:<br>
+		[ ][ ][O][ ][X][ ][ ]<br>
+		[ ][ ][ ][ ][ ][ ][ ]<br>
+		Turn 4:<br>
+		[ ][ ][ ][ ][ ][ ][ ]<br>
+		[ ][ ][O][X][ ][ ][ ]<br>
+		Moving towards Eirin is optional, but it reduces the number of turns.<br>
+		Same goes for Suika who has a 2-square attack.<br>
+	</p>
+	<h2><a name="TIPSsavescum">Save Scumming</a></h2>
+	<p>
+		As with all roguelikes, there WILL be times where the map/AI director acts like a bitch.<br>
+		Like spawning you in a no-win situation like inside a 百鬼夜行 (Monster House) of some sort, with monsters of a higher rank than you can handle.<br>
+		If that happens?<br>
+		<strong>ALT-F4</strong>.<br>
+		YES. You saw that right. Unlike the previous game, there is NO CONSEQUENCE FOR IT HERE.<br>
+		By doing it, you prevent the game from auto-saving.<br>
+		When you restart the game, it loads the state you begin with when you started the previous time.<br>
+		So you can try new strategies this time around.
+	</p>
+	<h2><a name="TIPSdlayouts">Dungeon Layouts</a></h2>
+	<p>
+		Through my hours of playing, I've identified a few room patterns that seem to pop up every now and then.<br>
+		Granted, the connecting hallways will not always be straight and have a few bends.<br>
+		<img src="roomLayoutOne.jpg" alt="Layout One: 12 rooms forming an interconnected perimeter with a hashtag-like connecting hallway system"><br>
+		<img src="roomLayoutTwo.jpg" alt="Layout Two: Ordinary 2x4"><br>
+		<img src="roomLayoutThree.jpg" alt="Layout Three: Ordinary 3x4"><br>
+		<img src="roomLayoutFour.jpg" alt="Layout Four: Ordinary 4x2 (Layout Two rotated 90 degrees CW/CCW)"><br>
+	</p>
+	<h2><a name="TIPSmysteryd">Regarding Dungeons with Unidentified Items</a></h2>
+	<p>
+		There are two ways to identify items: with special tools (detailed right below), or heuristically (IIRC it means 'through experience').<br>
+		You're going to NEED 識別「Ｇ〇〇ｇｌｅ」 (Identification "G**gle") and 識別のスキマ.<br>
+		If you don't have those, I have some tips for trial-and-error identification:<br>
+		<ol class="one">
+			<li>
+				About gaps/スキマ
+				<ol class="two">
+					<li>First, select the item and check whether the command under のぞく (look inside) is いれる (put into) or つかう (use) or とりだす (take out)</li>
+					<li>If it's とりだす, it's definitely スペアスキマ (Spare Gap). THIS IS ALSO ESSENTIAL IF YOU DON'T WANT TO THROW YOUR 識別のスキマ TO THE WALL JUST TO RECOVER ONE ITEM INSIDE.</li>
+					<li>If it's つかう, it's one of these: 吸い寄せのスキマ (Vacuum Gap), 魍魎のスキマ (Goblin's Gap), スキマシェルター (Shelter Gap)</li>
+					<li>If it's いれる, test by putting in one unnecessary item.</li>
+					<ol class="three">
+						<li>If it's identified (text changes from orange to white), it's a 識別のスキマ (ID Gap).</li>
+						<li>If you can still interact with the items inside the gap, it's a 保存のスキマ (Storage Gap).</li>
+						<li>If putting an item in it heals you to full HP, it's a こころのスキマ (Heart Gap).</li>
+						<li>If the item changes, it's a 変化のスキマ (Change Gap).</li>
+						<li>If none of the above happens? Throw the gap towards a wall. Make sure you stay away from the walls!</li>
+						<ol class="four">
+							<li>If it blows up, it's a 超爆発のスキマ (Bomb Gap).</li>
+							<li>If the item inside changes into money, it's a 換金のスキマ ('Turn Into Money' Gap).</li>
+							<li>If the item you put in has orbs and those orbs come out when you throw the gap, it's a 消化のスキマ (Orb Extraction Gap).</li>
+							<li>If it's anything else... you're going to need the Google spellcard.</li>
+						</ol>
+					</ol>
+				</ol>
+				REMEMBER THE ALIASES!
+			</li>
+			<li>
+				About the Ofudas/お札<br>
+				Refer to the Ofuda list for the effects, and REMEMBER THE ALIASES!<br>
+				If nothing seems to happen, by the way, it may be a 起動札 (that thing that causes the affected enemy to execute her special in the next turn or in range).
+			</li>
+			<li>
+				About the drinks<br>
+				You have no choice but to drink them and hope for the best.<br>
+				Best to test them when you start a floor so you can Alt-F4 and restart if you get an undesired drink.<br>
+				Also, REMEMBER THE ALIASES!
+			</li>
+			<li>
+				About the weapons/armor<br>
+				They're not too hard. Again, test-equip them at the start of the floor.<br>
+				If one is cursed, remember which item it is, then Alt-F4 and restart.
+			</li>
+			<li>
+				About the accessories<br>
+				I'm stumped with this one.<br>
+				You need the Google spellcard and the ID Gap for these...
+			</li>
+		</ol>
+	</p>
+
+	<h2>Shop Areas in Dungeons</h2>
+	<p>
+		There will be shop areas in dungeons.<br>
+		Before you shop, make sure you check for displacement traps so that they won't force you out with items you brought.<br>
+		REFRAIN FROM USING SPELLCARDS WHEN YOU HAVE A SHOP AREA!!
+	</p>
+	
+	<h2>How Long Does One Stay In A Floor Of A Dungeon?</h2>
+	<p>
+		Normally, 1000 turns.<br>
+		There is a special dungeon where you can only stay for 500, though.<br>
+		In the normal case, you'll be given a warning at 800 turns, and if you insist on staying until 1000 turns have passed...<br>
+		You lose all the items you don't have equipped.<br>
+		Speaking of the number of turns...
+	</p>
+	<h2>Stamina</h2>
+	<p>
+		The magnitude of the stamina you have is depicted right under your HP bar.<br>
+		This, however, is MUCH MORE IMPORTANT THAN THE HP.<br>
+		You know why I say that? Because if your stamina reaches 0, your HP decreases by 1 per turn.<br>
+		THAT SHUTS DOWN DUNGEON RUNS IF YOU DON'T HAVE OTHER HEALING MECHANISMS. Either because there's no Minoriko that converts items to food<br>
+		Or the map manager being a bitchass by spawning no drinks or food items for NINETY NINE FLOORS STRAIGHT.<br>
+		Replenish stamina by food items, most of which are waffles... except for the Yamame Sundae, a sundae MADE OUT OF CANDIES.<br>
+	</p>
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+<hr />
+	<h1><a name="STORY">Story</a></h1>
+	<p class="intro">NOTE: This is from what I understood!! Correct me if I'm wrong!</p>
+	<h3>Beginnings + Route 1</h3>
+	<p>
+		The time is after the events of Fushigi no Gensokyo.<br>
+		It starts with Kanako Yasaka and Suwako Moriya, the deities of Moriya Shrine, fighting over Suwako eating Kanako's pudding.<br>
+		After stopping that fight, Sanae Kochiya expresses her desire to hold a feast in Moriya Shrine in celebration of the resolution of the dungeon incident.<br>
+		She also wants to give Reimu a token of appreciation for resolving it.<br>
+		Routes 2 to 5 is thus a preparation for that feast.
+	</p>
+	<h3>Route 2</h3>
+	<p>
+		Sanae travels to Koumakyo, the Scarlet Devil Mansion, to ask Hong Meiling (a.k.a. China) to cook for the feast.
+	</p>
+	<h3>Route 3</h3>
+	<p>
+		Sanae travels to Hakurei Shrine to ask Yukari for the special chili sauce to be used in the food.
+	</p>
+	<h3>Route 4</h3>
+	<p>
+		Sanae, with Kanako, travels to the Tengu base in Youkai Mountain to ask Aya Shameimaru to advertise the feast.
+	</p>
+	<h3>Route 5</h3>
+	<p>
+		Sanae, with Suwako, travels to Kourindou to ask Rinnosuke for something. What that something is, I don't know yet.
+	</p>
+	<h3>Route 6</h3>
+	<p>
+		Things heat up when it was discovered that someone stole the present intended for Reimu.<br>
+		Clearing Route 6 opens up Routes 7 to 12.<br>
+	</p>
+	<h3>Route 7</h3>
+	<p>
+		Sanae receives a letter stating that Hieda no Akyuu has been kidnapped, so she travels with Reimu to the supposed location where she's being held.<br>
+		SPOILERS BELOW<br>
+		<spoilers>HOWEVER, SHE WASN'T REALLY KIDNAPPED.</spoilers><br>
+		<spoilers>SHE WOULD BE SEEN IN THE ENDING OF ROUTE 7 TALKING TO NITORI FROM THE FUTURE.</spoilers><br>
+	</p>
+	<h3>Route 8</h3>
+	<p>
+		Sanae responds to a challenge letter by Cirno who 'aims to be the strongest'. The letter was delivered by Tewi Inaba.<br>
+		SPOILERS BELOW<br>
+		<spoilers>Sanae does acknowledge that Cirno has gotten stronger after they do a Danmaku fight.</spoilers><br>
+		<spoilers>Tewi also consoles Cirno after her loss.</spoilers><br>
+	</p>
+	<h3>Route 9</h3>
+	<p>
+		Sanae responds to Rinnosuke asking her to investigate strange noises originating from where the Kappa live.<br>
+		SPOILERS BELOW<br>
+		<spoilers>WE GET RINNOSUKE ROBOTS! You know the robots that accompany Rinnosuke when he's in a multi-entrance room?</spoilers><br>
+		<spoilers>NITORI MADE THEM. The noises were caused by the Rinnosuke Robo-kai, the big version of the normal ones, malfunctioning!</spoilers><br>
+	</p>
+	<h3>Route 11</h3>
+	<p>
+		Sanae intended to return Utsuho's Control Rod/Handcannon to her, but ended up forging a friendship with a certain spider youkai.<br>
+		SPOILERS BELOW<br>
+		<spoilers>She meets Yamame Kurodani and forges a friendship with her.</spoilers><br>
+		<spoilers>They make food for each other, and Sanae even invites Yamame to the Moriya Shrine.</spoilers><br>
+		<spoilers>However, that friendship was threatened when Sanae became sick, apparently because of Yamame.</spoilers><br>
+		<spoilers>So in the final part of the arc, Sanae convinces Kanako and Suwako to let her meet Yamame...</spoilers><br>
+		<spoilers>But Yamame refuses due to fearing what would happen to Sanae if she gets close to her.</spoilers><br>
+		<spoilers>Sanae has the Yagokoro Elixir, however, so she's fine.</spoilers><br>
+		<spoilers>Since then, Yamame continues to learn to control her disease-based powers. With Sanae.</spoilers><br>
+	</p>
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+<hr />
+	<h1><a name="CHARS">Characters in order of appearance</a></h1>
+	<h4>Sanae Kochiya</h4>
+	<p>
+		Seiyuu: Madoka Yonezawa - Ui Hirasawa(K-ON!)<br>
+		Wishlist Seiyuu: Aya Uchida - Kotori Minami (Love Live!)
+	</p>
+	<p>
+		The main character.<br>
+		Recently relocated to Gensokyo,<br>
+	</p>
+	<h4>Kanako Yasaka</h4>
+	<p>
+		Seiyuu: Yukana - Tear Grants (Tales of the Abyss), Cecilia Alcott (Infinite Stratos)<br>
+		Wishlist Seiyuu: Pile - Maki Nishikino (Love Live!)
+	</p>
+	<p>
+		Recently relocated to Gensokyo,<br>
+	</p>
+	<h4>Suwako Moriya</h4>
+	<p>
+		Seiyuu: Omi Minami - Satsuki Yumizuka (Carnival Phantasm)<br>
+		Wishlist Seiyuu: Sora Tokui - Nico Yazawa (Love Live!)
+	</p>
+	<p>
+		Recently relocated to Gensokyo,<br>
+	</p>
+	<h4>Marisa Kirisame</h4>
+	<p>
+		Seiyuu: Youko Hikasa - Mio Akiyama (K-ON!)<br>
+		Wishlist Seiyuu: None. She's fine as she is.
+	</p>
+	<p>
+		The resident witch, and frequently steals books from Voile, the Magic Library.<br>
+	</p>
+	<h4>Hong Meiling, a.k.a. China</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Yurika Kubo - Hanayo Koizumi (Love Live!)
+	</p>
+	<p>
+		The gate guard of the Scarlet Devil Mansion, and Sanae wants her to cook Chinese food for the feast. For some reason.<br>
+	</p>
+	<h4>Sakuya Izayoi</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Miyuki Sawashiro - Sakuya Izayoi (Koumajou Densetsu)
+	</p>
+	<p>
+		Head maid of the Scarlet Devil Mansion. Good at cooking. Her power is of TIME MANIPULATION. Also loves throwing KNIVES.<br>
+	</p>
+	<h4>Yukari Yakumo</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Yoshino Nanjou - Eri Ayase (Love Live!), Kokoro Akechi (Tantei Opera Milky Holmes)
+	</p>
+	<p>
+		The gap Youkai that practically OWNS Gensoukyou. Sanae goes to her for the special chili sauce.<br>
+	</p>
+	<h4>Reimu Hakurei</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Aina Kusuda - Nozomi Toujou (Love Live!)
+	</p>
+	<p>
+		The shrine maiden of Hakurei Shrine, and the go-to person for incidents.<br>
+	</p>
+	<h4>Aya Shameimaru</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Emi Nitta - Honoka Kousaka (Love Live!)
+	</p>
+	<p>
+		The Tengu representative plus crazy reporter, whose newspaper, the Bunbunmaru Shinbun, is more like a tabloid than a journalistic product.<br>
+		LOL.
+	</p>
+	<h4>Rinnosuke Morichika</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Kenji Akabane - Producer (iDOLM@STER Anime)
+	</p>
+	<p>
+		The owner of the shop Kourindou which deals with things from the outside world.<br>
+	</p>
+	<h4>Tenshi Hinanai</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Suzuko Mimori - Umi Sonoda (Love Live!)
+	</p>
+	<p>
+		The celestial that caused earthquakes in Gensoukyou back in Touhou 10.5<spoilers>, and apparently the one who stole the present for Reimu.</spoilers><br>
+	</p>
+	<h4>Hieda no Akyuu</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Yurika Kubo - Hanayo Koizumi (Love Live!)
+	</p>
+	<p>
+		Gensoukyou's chronicler. She doesn't live long, however, and inherits memories from her ancestors.<br>
+		<spoilers>Seen talking to Nitori from the future at the end of Route 7</spoilers>
+	</p>
+	<h4>Tewi Inaba</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: ???
+	</p>
+	<p>
+		The prankster earth rabbit who delivers Cirno's challenge letter... <spoilers>the handwriting is shitty, by the way.</spoilers>
+	</p>
+	<h4>Cirno</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: ???
+	</p>
+	<p>
+		An ice fairy who wants to be the strongest. Unfortunately, she's quite an idiot.
+	</p>
+	<h4>Nitori Kawashiro</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: ???
+	</p>
+	<p>
+		Gensoukyou's technician and technophile. She's the one who made the Rinnosuke Robots.<br>
+		<spoilers>Her (I think) newest invention, Rinnosuke Robo-kai, malfunctions and is the final boss of Route 9.</spoilers>
+	</p>
+	<h4>Utsuho Reiuji</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Manami Numakura (Hibiki Ganaha - iDOLM@STER)
+	</p>
+	<p>
+		Referenced at the beginning of Route 11, where Sanae has to return Utsuho's Handcannon.<br>
+	</p>
+	<h4>Yamame Kurodani</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: ???
+	</p>
+	<p>
+		The Spider Youkai Sanae meets when she was returning Utsuho's Handcannon.<br>
+	</p>
+	<h4>Reisen Udongein Inaba</h4>
+	<p>
+		Seiyuu: ???<br>
+		Wishlist Seiyuu: Suzuko Mimori (Love Live!)
+	</p>
+	<p>
+		The assistant of the resident doctor, Eirin Yagokoro.<br>
+	</p>
+	<h4>Kasen Ibaraki</h4>
+	<p>
+		Seiyuu: Kaori Mizuhashi - Laharl (Disgaea)<br>
+		Wishlist Seiyuu: Rie Tanaka - Lacus Clyne (Gundam SEED Destiny), Mirei Saiguuji (CV ~Casting Voice~)
+	</p>
+	<p>
+		The boss of Nazrin Mountain's Route 6 - Moriya Trial.<br>
+	</p>
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+<hr />
+	<h1><a name="WEAPONS">Weapons (Vanilla)</a></h1>
+	<p class="intro">
+		These are introduced between v1.00 and v1.33
+		One thing you need to remember is that the weapons can be upgraded. But NOT IN THE WAY YOU THINK.<br>
+		You don't upgrade it in a blacksmith or something. You upgrade it using CANDIES. Specifically, ふしぎなアメちゃん (Mysterious Candy / Upgrade Candy)<br>
+		Using that increases the rank of your weapons by 1.<br>
+		There's another type of candy called ふしぎなアメちゃん親玉 (Mysterious Candy, King ver. / Revision Candy / Rev Candy)<br>
+		This increases the base attack of your weapon by 2, then 3, then 4, up to 99 [the process is termed 'Revision']. Make sure you stock lots of this.<br>
+		You can know the Revision number of the weapon by looking at the icon's 'R a' on the lower side. 'a' = Revision number<br>
+		強化「荒御魂」 (Strengthening "Rough Honorable Spirit") increases your weapon's attack power too, but this time in the form of +X beside your weapon's name.<br>
+		X in this case means the number. Up to 99 or whatever limit is set [the limit is increased by Revision Candies]. This goes for ALL weapons.<br>
+		The maximum attack power for ALL weapons is 98. The number of Rev Candies needed is detailed in the last column of the following tables.
+	</p>
+	<p>NOTE: Maybe I should use Javascript for this shit...</p>
+	<h2>Contents</h2>
+		<ol>
+			<li>
+				With No Properties
+				<ol>
+					<li><a href="#tree">木の棒 / Tree Branch</a></li>
+					<li><a href="#sausage">フランクフルト / Frankfurter</a></li>
+					<li><a href="#marisa">摩理沙？ / Marisa?</a></li>
+					<li><a href="#cdoll">チルノ人形 / Cirno Doll</a></li>
+					<li><a href="#umbrella">忘れ傘 / Forgotten Umbrella</a></li>
+					<li><a href="#sknife">銀のナイフ / Silver Knife</a></li>
+				</ol>
+			</li>
+			<li>
+				With Something-killer Properties
+				<ol>
+					<li><a href="#ball">木の棒 / Tree Branch</a></li>
+					<li><a href="#dipper">底抜けひしゃく / Bottomless Dipper</a></li>
+					<li><a href="#ayafan">文ちゃんうちわ / Aya-chan Fan</a></li>
+					<li><a href="#broom">竹箒 / Bamboo Broom</a></li>
+					<li><a href="#sotoba">卒塔婆 / Stupa</a></li>
+					<li><a href="#tewiears">てゐの耳 / Tewi's Ears</a></li>
+					<li><a href="#scimitar">哨戒天狗の刀 / Patrolling Tengu's Sword</a></li>
+					<li><a href="#ctrlrod">融合の足 / The Third Foot</a></li>
+					<li><a href="#ghostsword">白狼権 / Hakurouken, Plain-building Sword</a></li>
+				</ol>
+			</li>
+			<li>
+				With Other Properties
+				<ol>
+					<li><a href="#drillcloth">緋の衣 / Scarlet Cloth</a></li>
+					<li><a href="#scythe">草刈り鎌 / Harvester's Scythe</a></li>
+					<li><a href="#yuyufan">ゆゆ様うちわ / Yuyu-sama Fan</a></li>
+					<li><a href="#gourd">ウリ科の植物 / Gourd Fruit</a></li>
+					<li><a href="#bravesword">勇気凛々の剣 / Sword of Courage</a></li>
+					<li><a href="#brush">筆ペン / Caligraphy Brush</a></li>
+					<li><a href="#shovel">子供用シャベル / Trowel</a></li>
+					<li><a href="#laevateinn">グネグネした棒 / Bent Staff</a></li>
+					<li><a href="#pendulum">ペンデュラム / Pendulum</a></li>
+					<li><a href="#inubashiri">妖刀「犬走」 / Demon Sword "Inubashiri"</a></li>
+					<li><a href="#duster">はたきのようなもの / Something Like a Duster</a></li>
+					<li><a href="#log">丸太 / Log</a></li>
+					<li><a href="#hulahoop">フラフープ / Hula Hoop</a></li>
+				</ol>
+			</li>
+		</ol>
+	<h2><a name="noorbs">With No Properties</a></h2>
+		<h3><a name="tree">Family Name: 木の棒 / Tree Branch</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>木の棒</td>
+				<td>Tree Branch</td>
+				<td>1</td>
+				<td>99</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>99</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>おはらい棒</td>
+				<td>Cleansing Branch</td>
+				<td>1</td>
+				<td>99</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>99</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>祓串</td>
+				<td>Cleansing Rod</td>
+				<td>1</td>
+				<td>99</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>99</td>
+			</tr>
+		</table>
+		<p>
+			This is the only exception to that rule above. You do NOT expect to spend around 30 Revision Candies on this.<br>
+			There will NOT be a base attack increase until you spend 99 Revision Candies on it. Even with 98 Revision Candies, the Base Attack is STILL 1.<br>
+			Only with 99 Revision Candies does the Base Attack increase from 1 to 99. STRAIGHT AWAY.<br>
+			You CAN use the 強化「荒御魂」 spellcard on this, however, and the limit is already maxed out.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't see any use for this weapon except for emergencies, or in some dungeons where Revision Candies are rare.
+		</p>
+
+		<h3><a name="sausage">Family Name: フランクフルト / Frankfurter</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>フランクフルト</td>
+				<td>Frankfurter</td>
+				<td>3</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ガマの穂</td>
+				<td>Ear of Gama</td>
+				<td>5</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>かっぱ巻き</td>
+				<td>Kappamaki</td>
+				<td>7</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>
+			A Nitori-themed weapon.<br>
+			This is a little better than the one above, due to the number of Revision Candies required to max the base attack.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Again, more suited for emergencies. Also... how does a sausage turn into a plant and then a KAPPAMAKI SUSHI!?
+		</p>
+
+		<h3><a name="marisa">Family Name: 摩理沙？ / Marisa?</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>摩理沙？</td>
+				<td>Marisa?</td>
+				<td>2</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ゆっくり摩理沙</td>
+				<td>Yukkuri Marisa</td>
+				<td>7</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ゆっくり摩理沙DX</td>
+				<td>Yukkuri Marisa DX</td>
+				<td>10</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>
+			A Yukkuri-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			One WTF weapon for me. I don't think Yukkuris can be used as weapons...<br>
+			But anyway, this is again suited for emergencies.
+		</p>
+
+		<h3><a name="cdoll">Family Name: チルノ人形 / Cirno Doll</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>チルノ人形</td>
+				<td>Cirno Doll</td>
+				<td>3</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>蓬莱人形</td>
+				<td>Hourai Doll</td>
+				<td>6</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>首吊り蓬莱人形</td>
+				<td>Hanging Hourai Doll</td>
+				<td>10</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>
+			An Alice-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			The Rank 3 form is creepy, I'd say.
+		</p>
+
+		<h3><a name="umbrella">Family Name: 忘れ傘 / Forgotten Umbrella</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>忘れ傘</td>
+				<td>Forgotten Umbrella</td>
+				<td>3</td>
+				<td>20</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>から傘</td>
+				<td>Karakasa</td>
+				<td>6</td>
+				<td>20</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>超撥水「多々良小傘」</td>
+				<td>Super Water Repellant "Kogasa Tatara"</td>
+				<td>14</td>
+				<td>20</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>28</td>
+			</tr>
+		</table>
+		<p>
+			A Kogasa-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			For emergencies only. This is actually my preferred emergency weapon, what with the 3rd rank of it needing fewer Revision Candies...<br>
+		</p>
+
+		<h3><a name="sknife">Family Name: 銀のナイフ / Silver Knife</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>銀のナイフ</td>
+				<td>Silver Knife</td>
+				<td>1</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>35</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>マジックスターソード</td>
+				<td>Magic Star Sword</td>
+				<td>7</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>マジックスターランス</td>
+				<td>Magic Star Lance</td>
+				<td>14</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>28</td>
+			</tr>
+		</table>
+		<p>
+			A Sakuya-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			For emergencies only. My second favorite emergency weapon, however, since the initial Base Attack power is low.
+		</p>
+
+	<h2>With Something-killer Properties</h2>
+		<p>
+			Generally, put in orbs of the same property as the one already existing in the weapon to enhance that property. Maximum of 3 for [何々系特攻] orbs.<br>
+			Orbs. Will be detailed later.
+		</p>
+		<h3><a name="ball">Family Name: 陰陽ボール / Yin-Yang Ball</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+				<th>Image</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>陰陽ボール</td>
+				<td>Yin-Yang Ball</td>
+				<td>1</td>
+				<td>40</td>
+				<td>妖怪系特攻<br>Youkai Killer</td>
+				<td>妖怪系特攻「妖」<br>Youkai Killer</td>
+				<td>35</td>
+				<td><img src="demonballrankone.jpg"></td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>陰陽玉</td>
+				<td>Yin-Yang Sphere</td>
+				<td>5</td>
+				<td>40</td>
+				<td>妖怪系特攻<br>Youkai Killer</td>
+				<td>妖怪系特攻「妖」<br>Youkai Killer</td>
+				<td>33</td>
+				<td><img src="demonballranktwo.jpg"></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>陰陽鬼神玉</td>
+				<td>Yin-Yang Demon Sphere</td>
+				<td>7</td>
+				<td>40</td>
+				<td>妖怪系特攻<br>Youkai Killer</td>
+				<td>妖怪系特攻「妖」<br>Youkai Killer</td>
+				<td>32</td>
+				<td><img src="demonballrankthree.jpg"></td>
+			</tr>
+		</table>
+		<p>
+			A Reimu-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Now we're talking. Since most of the enemies are Youkai-types, this comes in handy. Make sure you upgrade it as soon as possible, however.
+		</p>
+
+		<h3><a name="dipper">Family Name: 底抜けひしゃく / Bottomless Dipper</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>底抜けひしゃく</td>
+				<td>Bottomless Dipper</td>
+				<td>2</td>
+				<td>30</td>
+				<td>水生系特攻<br>Water Being Killer</td>
+				<td>NONE</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ひしゃく</td>
+				<td>Dipper</td>
+				<td>5</td>
+				<td>30</td>
+				<td>水生系特攻<br>Water Being Killer</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ゴルディオンひしゃく</td>
+				<td>GOLDION Dipper</td>
+				<td>7</td>
+				<td>30</td>
+				<td>水生系特攻<br>Water Being Killer</td>
+				<td>NONE</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>
+			A Murasa-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't know about this one... the 水生系特攻 property is kinda useless in this game since the only Water Being is the kappa Nitori...<br>
+			...and Murasa in PLUS...<br>
+			...and Senjunamako-tan. I don't even know what she is! Heard she's an original character, AQUASTYLE's mascot...
+		</p>
+
+		<h3><a name="ayafan">Family Name: 文ちゃんうちわ / Aya-chan Fan</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>文ちゃんうちわ</td>
+				<td>Aya-chan Fan</td>
+				<td>2</td>
+				<td>30</td>
+				<td>浮遊系特攻<br>Flyer Killer</td>
+				<td>浮遊系特攻「浮」<br>Flyer Killer</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>天狗のうちわ</td>
+				<td>Tengu Fan</td>
+				<td>6</td>
+				<td>30</td>
+				<td>浮遊系特攻<br>Flyer Killer</td>
+				<td>浮遊系特攻「浮」<br>Flyer Killer</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>芭蕉扇</td>
+				<td>Bashou Ougi</td>
+				<td>10</td>
+				<td>30</td>
+				<td>浮遊系特攻<br>Flyer Killer</td>
+				<td>浮遊系特攻「浮」<br>Flyer Killer</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>
+			An Aya-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I called the third form the 'Huge-ass Fan'.
+		</p>
+
+		<h3><a name="broom">Family Name: 竹箒 / Bamboo Broom</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>竹箒</td>
+				<td>Bamboo Broom</td>
+				<td>2</td>
+				<td>30</td>
+				<td>妖精系特攻<br>Fairy Killer</td>
+				<td>妖精系特攻「精」<br>Fairy Killer</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>魔法のほうき</td>
+				<td>Magic Broom</td>
+				<td>6</td>
+				<td>30</td>
+				<td>妖精系特攻<br>Fairy Killer</td>
+				<td>妖精系特攻「精」<br>Fairy Killer</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ブレイジングスター</td>
+				<td>Blazing Star</td>
+				<td>10</td>
+				<td>30</td>
+				<td>妖精系特攻<br>Fairy Killer</td>
+				<td>妖精系特攻「精」<br>Fairy Killer</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>
+			A Marisa-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I guess Marisa hates fairies.<br>
+			This is my preferred weapon for Route 8, because of its Fairy Killer property and orb. Though I wish I had the Fire Trap Ofudas back then...<br>
+			You know, for Boss Cirno.
+		</p>
+
+		<h3><a name="sotoba">Family Name: 卒塔婆 / Stupa</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>卒塔婆</td>
+				<td>Stupa</td>
+				<td>4</td>
+				<td>30</td>
+				<td>神系特攻<br>Deity Killer</td>
+				<td>神系特攻「神」<br>Deity Killer</td>
+				<td>33</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>悔悟の棒</td>
+				<td>Bar of Remorse</td>
+				<td>8</td>
+				<td>30</td>
+				<td>神系特攻<br>Deity Killer</td>
+				<td>神系特攻「神」<br>Deity Killer</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>神は裁き</td>
+				<td>God's Judgement</td>
+				<td>12</td>
+				<td>30</td>
+				<td>神系特攻<br>Deity Killer</td>
+				<td>神系特攻「神」<br>Deity Killer</td>
+				<td>29</td>
+			</tr>
+		</table>
+		<p>
+			An Eiki-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			If I use this weapon, that means I'm in a bad mood and Hina procs her special TOO FREQUENTLY.
+		</p>
+
+		<h3><a name="tewiears">Family Name: てゐの耳 / Tewi's Ears</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>てゐの耳</td>
+				<td>Tewi's Ears</td>
+				<td>4</td>
+				<td>30</td>
+				<td>耳系特攻<br>Kemono Killer</td>
+				<td>耳系特攻「耳」<br>Kemono Killer</td>
+				<td>33</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>うどんげの耳</td>
+				<td>Reisen's Ears</td>
+				<td>8</td>
+				<td>30</td>
+				<td>耳系特攻<br>Kemono Killer</td>
+				<td>耳系特攻「耳」<br>Kemono Killer</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ウドンゲスラッシャー</td>
+				<td>UDONGE SLASHER</td>
+				<td>12</td>
+				<td>30</td>
+				<td>耳系特攻<br>Kemono Killer</td>
+				<td>耳系特攻「耳」<br>Kemono Killer</td>
+				<td>29</td>
+			</tr>
+		</table>
+		<p>
+			A Tewi/Reisen-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			If I use this weapon, I don't want to get the Confused/Berserk status from Udonge and want to destroy her as quickly as possible.
+		</p>
+
+		<h3><a name="scimitar">Family Name: 哨戒天狗の刀 / Patrolling Tengu's Sword</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>哨戒天狗の刀</td>
+				<td>Patrolling Tengu's Sword</td>
+				<td>4</td>
+				<td>20</td>
+				<td>天狗系特攻<br>Tengu Killer</td>
+				<td>NONE</td>
+				<td>33</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>白狼刀</td>
+				<td>Byakurou-katana<br>Shirookami-gatana?</td>
+				<td>8</td>
+				<td>20</td>
+				<td>天狗系特攻<br>Tengu Killer</td>
+				<td>NONE</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>千里眼の大太刀</td>
+				<td>Scimitar of Clairvoyance</td>
+				<td>13</td>
+				<td>20</td>
+				<td>天狗系特攻<br>Tengu Killer</td>
+				<td>NONE</td>
+				<td>29</td>
+			</tr>
+		</table>
+		<p>
+			A Momiji-themed weapon. Apparently.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I was only in it for the initial Base Attack.
+		</p>
+
+		<h3><a name="ctrlrod">Family Name: 融合の足 / The Third Foot</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>融合の足</td>
+				<td>The Third Foot</td>
+				<td>4</td>
+				<td>30</td>
+				<td>爆発系特攻<br>Explosion Killer</td>
+				<td>爆発系特攻「爆」<br>Explosion Killer</td>
+				<td>33</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>制御棒</td>
+				<td>Control Rod</td>
+				<td>7</td>
+				<td>30</td>
+				<td>爆発系特攻<br>Explosion Killer</td>
+				<td>爆発系特攻「爆」<br>Explosion Killer</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>超制御棒</td>
+				<td>Improved Control Rod</td>
+				<td>15</td>
+				<td>30</td>
+				<td>爆発系特攻<br>Explosion Killer</td>
+				<td>爆発系特攻「爆」<br>Explosion Killer</td>
+				<td>28</td>
+			</tr>
+		</table>
+		<p>
+			An Utsuho-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I think this is the third best weapon in the Vanilla version of the game, attack power wise, especially since Utsuho's a normal enemy now.<br>
+			Also my fourth favorite in the whole game.
+		</p>
+
+		<h3><a name="ghostsword">Family Name: 白狼権 / Hakurouken, Plain-building Sword</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>白狼権</td>
+				<td>Hakurouken<br>Plain-building Sword</td>
+				<td>4</td>
+				<td>30</td>
+				<td>幽霊系特攻<br>Ghost Killer</td>
+				<td>幽霊系特攻「幽」<br>Ghost Killer</td>
+				<td>33</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>楼観権</td>
+				<td>Roukanken<br>High-building Sword</td>
+				<td>9</td>
+				<td>30</td>
+				<td>幽霊系特攻<br>Ghost Killer</td>
+				<td>幽霊系特攻「幽」<br>Ghost Killer</td>
+				<td>31</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>斬魂刀</td>
+				<td>Zankontou<br>Soul-rending Cleaver</td>
+				<td>15</td>
+				<td>30</td>
+				<td>幽霊系特攻<br>Ghost Killer</td>
+				<td>幽霊系特攻「幽」<br>Ghost Killer</td>
+				<td>28</td>
+			</tr>
+		</table>
+		<p>
+			A Youmu-themed weapon, apparently, because the third weapon's name is something from the manga Bleach.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I think THIS is the best weapon in the Vanilla version of the game.
+		</p>
+
+	<h2>With Other Properties</h2>
+		<p>
+			Generally, put in orbs of the same property as the one already existing in the weapon to enhance that property. Maximum of 3 for [何々系特攻] orbs.<br>
+			Orbs. Will be detailed later.
+		</p>
+		<h3><a name="drillcloth">Family Name: 緋の衣 / Scarlet Cloth</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>緋の衣</td>
+				<td>Scarlet Cloth</td>
+				<td>1</td>
+				<td>50</td>
+				<td>貫通<br>Piercing</td>
+				<td>貫通「貫」<br>Piercing</td>
+				<td>35</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>龍魚ドリル</td>
+				<td>Dragonfish Drill</td>
+				<td>3</td>
+				<td>50</td>
+				<td>貫通<br>Piercing</td>
+				<td>貫通「貫」<br>Piercing</td>
+				<td>34</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ギガ龍魚ドリル</td>
+				<td>GIGA Dragonfish Drill</td>
+				<td>5</td>
+				<td>50</td>
+				<td>貫通<br>Piercing</td>
+				<td>貫通「貫」<br>Piercing</td>
+				<td>33</td>
+			</tr>
+		</table>
+		<p>
+			An Iku-themed weapon. The name 'Scarlet Cloth' gives it away.<br>
+			In Touhou 10.5 she does have a move that changes her cloth into a drill.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I prefer fusing this into another weapon.
+		</p>
+
+	<h3><a name="scythe">Family Name: 草刈り鎌 / Harvester's Scythe</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>草刈り鎌</td>
+				<td>Harvester's Scythe</td>
+				<td>1</td>
+				<td>50</td>
+				<td>必中<br>Accuracy</td>
+				<td>必中「必」<br>Accuracy</td>
+				<td>35</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>死神の鎌</td>
+				<td>Death Goddess's Scythe</td>
+				<td>4</td>
+				<td>50</td>
+				<td>必中<br>Accuracy</td>
+				<td>必中「必」<br>Accuracy</td>
+				<td>33</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ツイン死神の鎌</td>
+				<td>Twintailed Death Goddess's Scythe</td>
+				<td>8</td>
+				<td>50</td>
+				<td>必中<br>Accuracy</td>
+				<td>必中「必」<br>Accuracy</td>
+				<td>31</td>
+			</tr>
+		</table>
+		<p>
+			A Komachi-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			The Rank 3 form has Komachi sleeping on it... but that's not enough a reason for me to use it as a main weapon.<br>
+			Again, I prefer fusing this into another weapon.
+		</p>
+
+	<h3><a name="yuyufan">Family Name: ゆゆ様うちわ / Yuyu-sama Fan</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>ゆゆ様うちわ</td>
+				<td>Yuyu-sama Fan</td>
+				<td>3</td>
+				<td>30</td>
+				<td>一撃死<br>One Shot One Kill</td>
+				<td>一撃死「死」<br>One Shot One Kill</td>
+				<td>35</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>幽々子の扇</td>
+				<td>Yuyuko's Fan</td>
+				<td>5</td>
+				<td>30</td>
+				<td>一撃死<br>One Shot One Kill</td>
+				<td>一撃死「死」<br>One Shot One Kill</td>
+				<td>33</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>扇子オブチェリーブロッサム</td>
+				<td>Folding Fan/Sense of Cherry Blossom</td>
+				<td>9</td>
+				<td>30</td>
+				<td>一撃死<br>One Shot One Kill</td>
+				<td>一撃死「死」<br>One Shot One Kill</td>
+				<td>31</td>
+			</tr>
+		</table>
+		<p>
+			A Yuyuko-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			The 一撃死 property makes it tempting.
+		</p>
+
+	<h3><a name="gourd">Family Name: ウリ科の植物 / Gourd Fruit</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>ウリ科の植物</td>
+				<td>Gourd Fruit</td>
+				<td>2</td>
+				<td>30</td>
+				<td>延長<br>Melee Range Extension</td>
+				<td>延長「延」<br>Melee Range Extension</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ひょうたん</td>
+				<td>Gourd</td>
+				<td>6</td>
+				<td>30</td>
+				<td>延長<br>Melee Range Extension</td>
+				<td>延長「延」<br>Melee Range Extension</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>伊吹瓢</td>
+				<td>Ibuki Gourd</td>
+				<td>9</td>
+				<td>30</td>
+				<td>延長<br>Melee Range Extension</td>
+				<td>延長「延」<br>Melee Range Extension</td>
+				<td>31</td>
+			</tr>
+		</table>
+		<p>
+			A Suika-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			The 延長 property this time makes it... uh...<br>
+			I'd rather use it only when I've maxed it up to 198.
+		</p>
+
+	<h3><a name="bravesword">Family Name: 勇気凛々の剣 / Sword of Courage</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>勇気凛々の剣</td>
+				<td>Sword of Courage</td>
+				<td>2</td>
+				<td>30</td>
+				<td>緋想<br>Scarlet Perceptions</td>
+				<td>NONE</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>緋想の剣</td>
+				<td>Sword of Scarlet Perceptions</td>
+				<td>6</td>
+				<td>30</td>
+				<td>緋想<br>Scarlet Perceptions</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>全人類の緋想天</td>
+				<td>Humanity's Sky of Scarlet Perception</td>
+				<td>9</td>
+				<td>30</td>
+				<td>緋想<br>Scarlet Perceptions</td>
+				<td>NONE</td>
+				<td>31</td>
+			</tr>
+		</table>
+		<p>
+			A Tenshi/Tenko-themed weapon.<br>
+			The 緋想 property enhances damage up to 120% against Youkai and Flyers, and 130% to Deities, Kemono ears, Explosion-causing enemies, Tengus, and Cirno.<br>
+			WITHOUT Orbs.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Maybe I should make this my main...
+		</p>
+
+	<h3><a name="brush">Family Name: 筆ペン / Caligraphy Brush</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>筆ペン</td>
+				<td>Caligraphy Brush</td>
+				<td>2</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>34</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>阿求の筆</td>
+				<td>Akyuu's Brush</td>
+				<td>4</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>33</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>阿礼乙女の筆</td>
+				<td>Lady Miare's Brush</td>
+				<td>15</td>
+				<td>30</td>
+				<td>加虐 x5<br>Sadism x5</td>
+				<td>NONE</td>
+				<td>30</td>
+			</tr>
+		</table>
+		<p>
+			An Akyuu-themed weapon.<br>
+			You say the 3rd Rank form is a brush? I say it's more of a micro-scale, ignited, ICBM turned upside down and used as a weapon!<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Not sure if want.
+		</p>
+
+	<h3><a name="shovel">Family Name: 子供用シャベル / Trowel</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>子供用シャベル</td>
+				<td>Trowel / Kid's Shovel</td>
+				<td>1</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>発掘「発」 x3<br>Digging x3</td>
+				<td>35</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>大型スコップ</td>
+				<td>Shovel / Big Scoop</td>
+				<td>6</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>発掘「発」 x3<br>Digging x3</td>
+				<td>32</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>パワーショベル</td>
+				<td>Bulldozer Arm / Power Shovel</td>
+				<td>14</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>発掘「発」 x3<br>Digging x3</td>
+				<td>28</td>
+			</tr>
+		</table>
+		<p>
+			A Nazrin-themed weapon.<br>
+			Useful for digging stuff she finds on the ground, in the form of cracks emitting light.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			This is NEVER my main weapon.
+		</p>
+
+	<h3><a name="laevateinn">Family Name: グネグネした棒 / Bent Staff</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>グネグネした棒</td>
+				<td>Bent Staff</td>
+				<td>7</td>
+				<td>10</td>
+				<td>破壊<br>Destruction</td>
+				<td>破壊「破」<br>Destruction</td>
+				<td>33</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>禁忌「レーヴァテイン」</td>
+				<td>Forbidden "Laevateinn"</td>
+				<td>13</td>
+				<td>10</td>
+				<td>破壊<br>Destruction</td>
+				<td>破壊「破」<br>Destruction</td>
+				<td>29</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>フラン人形</td>
+				<td>Flandre Doll</td>
+				<td>20</td>
+				<td>10</td>
+				<td>破壊<br>Destruction</td>
+				<td>破壊「破」<br>Destruction</td>
+				<td>25</td>
+			</tr>
+		</table>
+		<p>
+			A Flandre-themed weapon.<br>
+			Useful for digging through the walls if there's a secret room in the floor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			This is my second favorite.<br>
+			Especially with the overkill base attack.
+		</p>
+
+	<h3><a name="pendulum">Family Name: ペンデュラム / Pendulum</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>ペンデュラム</td>
+				<td>Pendulum</td>
+				<td>7</td>
+				<td>10</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>32</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ダウジングロッド</td>
+				<td>Dousing Rod</td>
+				<td>12</td>
+				<td>10</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>29</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ナズーリンロッド</td>
+				<td>Nazrin Rod</td>
+				<td>20</td>
+				<td>10</td>
+				<td>遺失<br>Lost Things</td>
+				<td>NONE</td>
+				<td>25</td>
+			</tr>
+		</table>
+		<p>
+			A Nazrin-themed weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			This is my 3rd favorite<br>
+			I say 3rd because I only RARELY get 遺失 to proc. Maybe I should put more 遺失 orbs in it?
+		</p>
+
+	<h3><a name="inubashiri">Family Name: 妖刀「犬走」 / Demon Sword "Inubashiri"</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>妖刀「犬走」</td>
+				<td>Demon Sword "Inubashiri"</td>
+				<td>10</td>
+				<td>10</td>
+				<td>広範囲攻撃<br>Wide-Range</td>
+				<td>NONE</td>
+				<td>30</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>妖刀「犬走・改」</td>
+				<td>Demon Sword "Inubashiri Aratame"</td>
+				<td>15</td>
+				<td>10</td>
+				<td>広範囲攻撃<br>Wide-Range</td>
+				<td>NONE</td>
+				<td>28</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>真・妖刀「犬走」</td>
+				<td>Super Demon Sword "Inubashiri"</td>
+				<td>20</td>
+				<td>10</td>
+				<td>広範囲攻撃<br>Wide-Range</td>
+				<td>NONE</td>
+				<td>25</td>
+			</tr>
+		</table>
+		<p>
+			Another Momiji-themed weapon... because of the Inubashiri thing.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			This would've been in my favorites list... <b>IF IT WASN'T SO RARE!!!</b>
+		</p>
+
+	<h3><a name="duster">Family Name: はたきのようなもの / Something Like a Duster</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>はたきのようなもの</td>
+				<td>Something Like a Duster</td>
+				<td>15</td>
+				<td>5</td>
+				<td>治癒<br>Healing</td>
+				<td>治癒「治」<br>Healing</td>
+				<td>28</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>奇跡の棒</td>
+				<td>Miracle Staff</td>
+				<td>20</td>
+				<td>5</td>
+				<td>治癒<br>Healing</td>
+				<td>治癒「治」<br>Healing</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>奇跡の大幣</td>
+				<td>Miracle Lance</td>
+				<td>25</td>
+				<td>5</td>
+				<td>治癒<br>Healing</td>
+				<td>治癒「治」<br>Healing</td>
+				<td>23</td>
+			</tr>
+		</table>
+		<p>
+			A Sanae-themed weapon...<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			<b>I HAVE NO IDEA HOW TO GET THIS WEAPON. OR WHERE.</b>
+		</p>
+
+	<h3><a name="log">Family Name: 丸太 / Log</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>丸太</td>
+				<td>Log</td>
+				<td>20</td>
+				<td>5</td>
+				<td>生命力増幅 x3 + 砲撃 x2<br>HP Amp x3 + Danmaku Extension x2</td>
+				<td>NONE</td>
+				<td>28</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>オンバシラ</td>
+				<td>Onbashira</td>
+				<td>30</td>
+				<td>5</td>
+				<td>生命力増幅 x2 + 砲撃<br>HP Amp x2 + Danmaku Extension</td>
+				<td>NONE</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>メテオリックオンバシラ</td>
+				<td>Meteoric Onbashira</td>
+				<td>10</td>
+				<td>5</td>
+				<td>生命力増幅 + 貫通 + 遠離 + 砲撃 x2 + 破壊<br>HP Amp + Piercing + Knockback + Danmaku Extension x2 + Destruction</td>
+				<td>NONE</td>
+				<td>31</td>
+			</tr>
+		</table>
+		<p>
+			A Kanako-themed weapon...<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			SOMEONE HELP ME ON HOW TO GET THIS THING! I WANT IT!!!<br>
+			Also, if you notice, the Rank 3 is actually a downgrade in terms of attack power, but an upgrade in terms of utility.
+		</p>
+
+	<h3><a name="hulahoop">Family Name: フラフープ / Hula Hoop</a></h3>
+		<table id="weaponstable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Attack</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>フラフープ</td>
+				<td>Hula Hoop</td>
+				<td>1</td>
+				<td>1</td>
+				<td>必中 + 解放<br>Accuracy + Release</td>
+				<td>???</td>
+				<td>35</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ビームフラフープ</td>
+				<td>Beam Hula Hoop</td>
+				<td>1</td>
+				<td>1</td>
+				<td>必中 + 解放<br>Accuracy + Release</td>
+				<td>???</td>
+				<td>35</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>洩矢の鉄の輪</td>
+				<td>Moriya Iron Rings</td>
+				<td>1</td>
+				<td>1</td>
+				<td>必中 + 解放 + 多段攻撃<br>Accuracy + Release + Multi-attack</td>
+				<td>???</td>
+				<td>35</td>
+			</tr>
+		</table>
+		<p>
+			A Suwako-themed weapon.<br>
+			ONLY when the Rev version goes up to 35 does the Bolstering Limit go up to 99.
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Ditto from the weapon before this. HELP!!<br>
+		</p>
+
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+<hr />
+
+	<h1><a name="WEAPONSPLUS">Weapons (Plus Expansion)</a></h1>
+
+<hr />
+
+	<h1><a name="ARMOR">Armor (Vanilla)</a></h1>
+	<p class="intro">
+		These armors are introduced between v1.00 and v1.33<br>
+		Upgrading these is basically the same as upgrading weapons, except that you bolster armor using 硬化「幸御魂」 (Hardening "Prosperous Honorable Spirit").
+		Also, I'll have to test each armor's Revision to Max value...
+	</p>
+	<h2>Contents</h2>
+		<ol>
+			<li>
+				With No Properties
+				<ol>
+					<li><a href="#reimuyk">霊夢？ / Reimu?</a></li>
+				</ol>
+			</li>
+			<li>
+				With Something-Defense Properties
+				<ol>
+					<li><a href="#propexpl">Explanation of the Orb-Armor Property Synergy</a></li>
+					<li><a href="#kappahat">にとりの帽子 / Nitori's Hat</a></li>
+					<li><a href="#heater">湯たんぽ / Heater Element</a></li>
+					<li><a href="#tdoll">てゐ人形 / Tewi Doll</a></li>
+					<li><a href="#pops">お父さん？ / Father?</a></li>
+					<li><a href="#cap">キャプテンキャップ / Captain's Cap</a></li>
+					<li><a href="#lilyhat">春っぽい帽子 / Spring's Hat</a></li>
+					<li><a href="#hinaribbon">厄いリボン / Unlucky Ribbon</a></li>
+					<li><a href="#okuuribbon">お空のリボン / Okuu's/Utsuho's Ribbon</a></li>
+					<li><a href="#mshield">哨戒天狗の楯 / Patrolling Tengu's Shield</a></li>
+					<li><a href="#umbrellaarmor">忘れ傘 / Forgotten Umbrella</a></li>
+					<li><a href="#gap">スキマ / Gap</a></li>
+				</ol>
+			</li>
+			<li>
+				With Enemy Special Resistance Properties
+				<ol>
+					<li><a href="#koishieye">こいしの目 / Koishi's Eye</a></li>
+					<li><a href="#picbook">絵本 / Picture Book</a></li>
+					<li><a href="#hakkero">ミニ八卦炉 / Miniature Hakkero</a></li>
+					<li><a href="#crescent">三日月プレート / Crescent Plate</a></li>
+					<li><a href="#remiribbon">紅いリボン / Red Ribbon</a></li>
+					<li><a href="#flhairpin">椿の髪飾り / Camelia Hairpin</a></li>
+					<li><a href="#stone">漬物石 / Weight Stone</a></li>
+				</ol>
+			</li>
+			<li>
+				With Other Properties
+				<ol>
+					<li><a href="#ikuribbon">触角リボン / Long Ribbon</a></li>
+					<li><a href="#dragplate">ドラゴンプレート / Dragon Plate</a></li>
+					<li><a href="#grapes">ぶどう / Grapes</a></li>
+					<li><a href="#moneybox">博麗神社の賽銭箱 / Hakurei Shrine Offering Box</a></li>
+					<li><a href="#ghosthat">額烏帽子 / Hitai-eboshi (Forehead Hat)</a></li>
+					<li><a href="#strawhat">麦わら帽子 / Straw Hat</a></li>
+				</ol>
+			</li>
+		</ol>
+	<h2>With No Properties</h2>
+	<h3><a name="reimuyk">Family Name: 霊夢？ / Reimu?</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>霊夢？</td>
+				<td>Reimu?</td>
+				<td>2</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ゆっくり霊夢</td>
+				<td>Yukkuri Reimu</td>
+				<td>5</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ゆっくり霊夢ＤＸ</td>
+				<td>Yukkuri Reimu DX</td>
+				<td>9</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Yukkuri-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I never use this.
+		</p>
+
+	<h2>With Something-defense Properties</h2>
+	<p class="intro">
+		<a name="propexpl">Now, before we go on, I'll have to explain something.</a><br>
+		The following Properties part of the table will have a number next to the property.<br>
+		That's the initial Damage Reduction Percentage. The following table has the details.<br>
+		The assumption is that a random armor has 'ALPHA' property of varying percentages.<br>
+	</p>
+		<table id="explaintable">
+			<tr>
+				<th>ALPHA Orbs Installed</th>
+				<th>Total Damage Reduction:<br>No property</th>
+				<th>Total Damage Reduction:<br>ALPHA 30</th>
+				<th>Total Damage Reduction:<br>ALPHA 40</th>
+				<th>Total Damage Reduction:<br>ALPHA 50</th>
+			</tr>
+			<tr>
+				<th>0</th>
+				<td>0%</td>
+				<td>30%</td>
+				<td>40%</td>
+				<td>50%</td>
+			</tr>
+			<tr>
+				<th>1</th>
+				<td>30%</td>
+				<td>60%</td>
+				<td>70%</td>
+				<td>80%</td>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td>40%</td>
+				<td>70%</td>
+				<td>80%</td>
+				<td>90%</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>50%</td>
+				<td>80%</td>
+				<td>90%</td>
+				<td>100%</td>
+			</tr>
+		</table>
+	<p class="intro">
+		And now, we carry on.
+	</p>
+	<h3><a name="kappahat">Family Name: にとりの帽子 / Nitori's Hat</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>にとりの帽子</td>
+				<td>Nitori's Hat</td>
+				<td>2</td>
+				<td>30</td>
+				<td>水生系耐性30<br>Water Being Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>リュック</td>
+				<td>Rucksack</td>
+				<td>5</td>
+				<td>30</td>
+				<td>水生系耐性30<br>Water Being Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>のびーるアーム</td>
+				<td>Mobile Arms</td>
+				<td>9</td>
+				<td>30</td>
+				<td>水生系耐性30 +　爆発系耐性30<br>Water Being Defense 30% + Explosion Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Nitori-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I never use this. I mean, the only 水生 / Water Being I need to worry about is Nitori, since she's invisible without Eye Drops!<br>
+			I can handle Murasa in one shot if I have a good weapon...<br>
+			And there's Senjunamako-tan that I can only deal 1 damage to, but deals 1 damage in return.
+		</p>
+
+	<h3><a name="heater">Family Name: 湯たんぽ / Heater Element</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>湯たんぽ</td>
+				<td>Heater Element</td>
+				<td>2</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>法界炉</td>
+				<td>Houkai Furnace?</td>
+				<td>5</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>こたつ</td>
+				<td>Kotatsu</td>
+				<td>9</td>
+				<td>30</td>
+				<td>月人系耐性50<br>Lunarian Defense 50%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			An Eientei-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Uh...
+		</p>
+
+	<h3><a name="tdoll">Family Name: てゐ人形 / Tewi Doll</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>てゐ人形</td>
+				<td>Tewi Doll</td>
+				<td>2</td>
+				<td>30</td>
+				<td>耳系統性30<br>Kemono Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>上海人形</td>
+				<td>Shanghai Doll</td>
+				<td>5</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>魔採光の上海人形</td>
+				<td>Enchanted Shanghai Doll</td>
+				<td>9</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			An Alice-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Not sure if want.<br>
+			I mean, the property disappears as you go up in rank.
+		</p>
+
+	<h3><a name="pops">Family Name: お父さん？ / Father?</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>お父さん？</td>
+				<td>Father?</td>
+				<td>2</td>
+				<td>30</td>
+				<td>耳系統性30<br>Kemono Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>親子で記念写真</td>
+				<td>Father-child Memento</td>
+				<td>5</td>
+				<td>30</td>
+				<td>耳系統性40<br>Kemono Defense 40%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>星蓮船の愉快な仲間たち</td>
+				<td>The Palanquin Ship's Band of Sisters</td>
+				<td>9</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Nazrin-themed armor. Apparently.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Again, not sure if want. Oh, and what's the story behind this?
+		</p>
+
+	<h3><a name="cap">Family Name: キャプテンキャップ / Captain's Cap</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>キャプテンキャップ</td>
+				<td>Captain's Cap</td>
+				<td>3</td>
+				<td>30</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>イカリ</td>
+				<td>Anchor</td>
+				<td>5</td>
+				<td>30</td>
+				<td>水生系統性30<br>Water Being Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>道連れアンカー</td>
+				<td>Companion Anchor</td>
+				<td>9</td>
+				<td>30</td>
+				<td>幽霊系耐性30 + 水生系統性30<br>Ghost Defense 30% + Water Being Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Murasa-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't use this.
+		</p>
+
+	<h3><a name="lilyhat">Family Name: 春っぽい帽子 / Spring's Hat</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>春っぽい帽子</td>
+				<td>Spring's Hat</td>
+				<td>1</td>
+				<td>30</td>
+				<td>妖精系耐性30<br>Fairy Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>リリーホワイトの帽子</td>
+				<td>Lily White's Hat</td>
+				<td>6</td>
+				<td>30</td>
+				<td>妖精系耐性40<br>Fairy Defense 40%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>リリーブラックの帽子RX</td>
+				<td>Lily Black's Hat RX</td>
+				<td>10</td>
+				<td>30</td>
+				<td>妖精系耐性30 + 浮遊系耐性30<br>Fairy Defense 30% + Flyer Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Lily White-themed armor.<br>
+			The weird thing is that she was present in Fushigi no Gensokyo 1, but not here.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			The only time I used this is in Route 8, because of Boss Cirno, who's a Fairy AND is Flying.<br>Add 3 親玉系耐性 orbs and I was supposed to good to go. I didn't have those back then.
+		</p>
+
+	<h3><a name="hinaribbon">Family Name: 厄いリボン / Unlucky Ribbon</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>厄いリボン</td>
+				<td>Unlucky Ribbon</td>
+				<td>2</td>
+				<td>30</td>
+				<td>神系耐性30<br>Deity Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>雛のリボン</td>
+				<td>Hina's Ribbon</td>
+				<td>7</td>
+				<td>30</td>
+				<td>神系耐性40<br>Deity Defense 40%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>厄神のリボン</td>
+				<td>Curse God's Ribbon</td>
+				<td>11</td>
+				<td>30</td>
+				<td>神系耐性30 + 浮遊系耐性30<br>Deity Defense 30% + Flyer Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Hina-themed armor (Hina Kagiyama, the resident curse goddess).<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			You might need this for beating Hina if she does her Specials too often.<br>
+			She's a Deity-type enemy, and Flying too.<br>
+			I don't use it though.
+		</p>
+
+	<h3><a name="okuuribbon">Family Name: お空のリボン / Okuu's/Utsuho's Ribbon</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>お空のリボン</td>
+				<td>Okuu's/Utsuho's Ribbon</td>
+				<td>3</td>
+				<td>20</td>
+				<td>爆発系耐性40<br>Explosion Defense 40%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>八咫烏の眼</td>
+				<td>Yatagarasu's Eye</td>
+				<td>8</td>
+				<td>20</td>
+				<td>爆発系耐性30 + 浮遊系耐性30<br>Explosion Defense 30% + Flyer Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>お空スペシャル</td>
+				<td>Okuu/Utsuho Special</td>
+				<td>12</td>
+				<td>20</td>
+				<td>爆発系耐性30 + 浮遊系耐性30 + 半ボス系耐性30<br>Explosion Defense 30% + Flyer Defense 30% + Mid-boss Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			An Utsuho-themed armor (Utsuho is called Okuu here).<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			This is my favorite armor in the game, and may be the best.<br>
+			Utsuho's going to become a threat in several dungeons, and that's why I use it.<br>
+			Route 9 also has Rinnosuke Robo enemies, classified as 半ボス/Mid-boss.
+		</p>
+
+	<h3><a name="mshield">Family Name: 哨戒天狗の楯 / Patrolling Tengu's Shield</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>哨戒天狗の楯</td>
+				<td>Patrolling Tengu's Shield</td>
+				<td>4</td>
+				<td>20</td>
+				<td>天狗系耐性30<br>Tengu Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>椛の楯</td>
+				<td>Momiji's Shield</td>
+				<td>7</td>
+				<td>20</td>
+				<td>天狗系耐性30<br>Tengu Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>千里眼の楯</td>
+				<td>Shield of Clairvoyance</td>
+				<td>12</td>
+				<td>20</td>
+				<td>天狗系耐性40<br>Tengu Defense 40%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Momiji-themed armor.<br>
+			Momiji was present in Fushigi no Gensokyo 1, but not here.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't use this often.
+		</p>
+
+	<h3><a name="umbrellaarmor">Family Name: 忘れ傘 / Forgotten Umbrella</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>忘れ傘</td>
+				<td>Forgotten Umbrella</td>
+				<td>3</td>
+				<td>20</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>から傘</td>
+				<td>Karakasa</td>
+				<td>7</td>
+				<td>20</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>超撥水「多々良小傘」</td>
+				<td>Super Water Repellant "Kogasa Tatara"</td>
+				<td>12</td>
+				<td>20</td>
+				<td>水生系耐性40<br>Water Being Defense 40%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Kogasa-themed armor.<br>
+			Kinda strange how the names are exactly the same as the weapon.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't use this often, except for very early game defense.
+		</p>
+
+	<h3><a name="gap">Family Name: スキマ / Gap</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>スキマ</td>
+				<td>Gap</td>
+				<td>10</td>
+				<td>10</td>
+				<td>脆弱<br>Fragile</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>ラセンスキマ</td>
+				<td>Spiral Gap</td>
+				<td>15</td>
+				<td>10</td>
+				<td>脆弱 + 鬼系耐性30<br>Fragile + Oni Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>二重ラセンスキマ</td>
+				<td>Double Spiral Gap</td>
+				<td>20</td>
+				<td>10</td>
+				<td>脆弱 + 鬼系耐性30 + 妖怪系耐性30<br>Fragile + Oni Defense 30% + Youkai Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Yukari-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I got this rarely when I'm in the PLUS dungeons, but I never got to use it.<br>
+			Also, DO NOT THROW IT. YOU'LL LOSE IT FOREVER.
+		</p>
+
+	<h2>With Enemy Special Resistance Properties</h2>
+	<h3><a name="koishieye">Family Name: こいしの目 / Koishi's Eye</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>こいしの目</td>
+				<td>Koishi's Eye</td>
+				<td>1</td>
+				<td>50</td>
+				<td>軽減<br>Dampening</td>
+				<td>軽減「軽」<br>Dampening</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>さとりの目</td>
+				<td>Satori's Eye</td>
+				<td>3</td>
+				<td>50</td>
+				<td>軽減<br>Dampening</td>
+				<td>軽減「軽」<br>Dampening</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>第三の目</td>
+				<td>Third Eye</td>
+				<td>5</td>
+				<td>50</td>
+				<td>軽減<br>Dampening</td>
+				<td>軽減「軽」<br>Dampening</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Satori/Koishi-themed armor.<br>
+			<table id="explaintable">
+				<tr>
+					<th>軽減 Orbs Installed</th>
+					<th>Fixed Damage Percentage Received<br>Normal Armor</th>
+					<th>Fixed Damage Percentage Received<br>こいしの目</th>
+					<th>Fixed Damage Percentage Received<br>さとりの目</th>
+				</tr>
+				<tr>
+					<td>0</td>
+					<td>100%</td>
+					<td>80%</td>
+					<td>75%</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>90%</td>
+					<td>70%</td>
+					<td>65%</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>85%</td>
+					<td>65%</td>
+					<td>60%</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>80%</td>
+					<td>60%</td>
+					<td>55%</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>75%</td>
+					<td>55%</td>
+					<td>50%</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>70%</td>
+					<td>50%</td>
+					<td>45%</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>65%</td>
+					<td>45%</td>
+					<td>40%</td>
+				</tr>
+			</table>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't use this often.
+		</p>
+
+	<h3><a name="picbook">Family Name: 絵本 / Picture Book</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>絵本</td>
+				<td>Picture Book</td>
+				<td>1</td>
+				<td>50</td>
+				<td>変換<br>Conversion</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>パッチェの摩導書</td>
+				<td>Patchy's Magic Tome</td>
+				<td>3</td>
+				<td>50</td>
+				<td>変換 + 魔法使い系耐性30<br>Conversion + Magician Defense 30%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>禁書「小悪魔召喚」</td>
+				<td>Forbidden Book "Koakuma Summoning"</td>
+				<td>5</td>
+				<td>50</td>
+				<td>変換 + 魔法使い系耐性40<br>Conversion + Magician Defense 40%</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Patchouli (Patchy)-themed armor.<br>
+			<table id="explaintable">
+				<tr>
+					<th>変換 Orbs Installed</th>
+					<th>Percentage of HP Damage<br>Normal Armor</th>
+					<th>Percentage of HP Damage<br>絵本</th>
+					<th>Percentage of HP Damage<br>絵本 + 6 Other DR Orbs</th>
+				</tr>
+				<tr>
+					<td>0</td>
+					<td>NaN</td>
+					<td>45%</td>
+					<td>29%</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>50%</td>
+					<td>36%</td>
+					<td>23%</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>45%</td>
+					<td>31%</td>
+					<td>20%</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>40%</td>
+					<td>26%</td>
+					<td>17%</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>35%</td>
+					<td>21%</td>
+					<td>14%</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>30%</td>
+					<td>16%</td>
+					<td>11%</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>26%</td>
+					<td>11%</td>
+					<td>7%</td>
+				</tr>
+			</table>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			The 変換 property is why I don't want to use this armor.<br>
+			I mean, you can just use the Uplift Tile or 浮遊茶 to avoid all the traps...
+		</p>
+
+	<h3><a name="hakkero">Family Name: ミニ八卦炉 / Miniature Hakkero</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>ミニ八卦炉</td>
+				<td>Miniature Hakkero</td>
+				<td>3</td>
+				<td>30</td>
+				<td>防犯 + 盗人系耐性30<br>Security + Thief Defense 30%</td>
+				<td>防犯「犯」<br>Security</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>摩理沙の帽子</td>
+				<td>Marisa's Hat</td>
+				<td>6</td>
+				<td>30</td>
+				<td>防犯 + 盗人系耐性40<br>Security + Thief Defense 40%</td>
+				<td>防犯「犯」<br>Security</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>摩理沙の帽子Mk-II</td>
+				<td>Marisa's Hat Mk-II</td>
+				<td>10</td>
+				<td>30</td>
+				<td>防犯 + 盗人系耐性30 + 魔法使い系耐性30<br>Security + Thief Defense 30% + Magician Defense 30%</td>
+				<td>防犯「犯」<br>Security</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Marisa-themed armor.<br>
+			Marisa as a mob in Fushigi no Gensokyo has a chance of stealing your items and teleporting away.<br>
+			This ability is shared by Shou in FnG2:MP.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't use this.
+		</p>
+
+	<h3><a name="crescent">Family Name: 三日月プレート / Crescent Plate</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>三日月プレート</td>
+				<td>Crescent Plate</td>
+				<td>3</td>
+				<td>30</td>
+				<td>地雷名張 + 爆発系耐性30<br>EOD Armor + Explosion Defense 30%</td>
+				<td>地雷名張「地」<br>EOD Armor</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>パッチェの帽子</td>
+				<td>Patchy's Hat</td>
+				<td>6</td>
+				<td>30</td>
+				<td>地雷名張 + 魔法使い系耐性30<br>EOD Armor + Magician Defense 30%</td>
+				<td>地雷名張「地」<br>EOD Armor</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>賢者の帽子</td>
+				<td>Sage's Hat</td>
+				<td>10</td>
+				<td>30</td>
+				<td>地雷名張 + 爆発系耐性30 + 魔法使い系耐性30<br>EOD Armor + Explosion Defense 30% + Magician Defense 30%</td>
+				<td>地雷名張「地」<br>EOD Armor</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Patchy-themed armor.<br>
+			Patchouli as a mob in Fushigi no Gensokyo throws magic spells with various effects at you.<br>
+			And BLOWS UP LIKE A NUKE UPON DEATH.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I don't use this except in some cases.
+		</p>
+
+	<h3><a name="remiribbon">Family Name: 紅いリボン / Red Ribbon</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>紅いリボン</td>
+				<td>Red Ribbon</td>
+				<td>2</td>
+				<td>20</td>
+				<td>吸血耐性<br>Vampire Defense<br>[unknown magnitude]</td>
+				<td>吸血耐性「吸」<br>Vampire Defense</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>レミリアの帽子</td>
+				<td>Remilia's Hat</td>
+				<td>6</td>
+				<td>20</td>
+				<td>吸血耐性 + 浮遊系耐性30<br>Vampire Defense + Flyer Defense 30%</td>
+				<td>吸血耐性「吸」<br>Vampire Defense</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>レミリア人形</td>
+				<td>Remilia Doll</td>
+				<td>11</td>
+				<td>20</td>
+				<td>吸血耐性 + 浮遊系耐性30 + 鬼系耐性30<br>Vampire Defense + Flyer Defense 30% + Oni Defense 30%</td>
+				<td>吸血耐性「吸」<br>Vampire Defense</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Remilia-themed armor.<br>
+			Apparently defends against Remilia and her Power Drain special...<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I haven't tested the Vampire Defense property.
+		</p>
+
+	<h3><a name="flhairpin">Family Name: 椿の髪飾り / Camelia Hairpin</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>椿の髪飾り</td>
+				<td>Camelia Hairpin</td>
+				<td>2</td>
+				<td>50</td>
+				<td>記録<br>Record</td>
+				<td>記録「記」<br>Record</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>阿求の髪飾り</td>
+				<td>Akyuu's Hairpin</td>
+				<td>8</td>
+				<td>50</td>
+				<td>記録<br>Record</td>
+				<td>記録「記」<br>Record</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>阿礼乙女の髪飾り</td>
+				<td>Lady Miare's Hairpin</td>
+				<td>11</td>
+				<td>50</td>
+				<td>記録<br>Record</td>
+				<td>記録「記」<br>Record</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			An Akyuu-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Only useful in dungeons with unidentified items, especially in situations where you're surrounded and want to use some item.<br>
+			Also, explain to me how the fuck does the "Lady Miare's Hairpin" look ANYTHING like a hairpin?!<br>
+			That thing looks more like a star-shaped riot shield!
+		</p>
+
+	<h3><a name="stone">Family Name: 漬物石 / Weight Stone</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>漬物石</td>
+				<td>Weight Stone</td>
+				<td>4</td>
+				<td>20</td>
+				<td>NONE</td>
+				<td>重石「重」<br>Heavyweight</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>要石</td>
+				<td>Keystone</td>
+				<td>7</td>
+				<td>20</td>
+				<td>天人系耐性30<br>Celestial Defense 30%</td>
+				<td>重石「重」<br>Heavyweight</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>天空の霊石</td>
+				<td>Heaven's Spirit Stone</td>
+				<td>13</td>
+				<td>20</td>
+				<td>天人系耐性30<br>Celestial Defense 30%</td>
+				<td>重石「重」<br>Heavyweight</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Tenshi-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Theoretically, you need this for Boss Tenshi of Route 6. Just add 親玉系耐性 orbs.
+		</p>
+
+	<h2>With Other Pre-installed Properties</h2>
+	<h3><a name="ikuribbon">Family Name: 触角リボン / Long Ribbon</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>触角リボン</td>
+				<td>Long Ribbon</td>
+				<td>1</td>
+				<td>50</td>
+				<td>回避<br>Evasion</td>
+				<td>回避「回」<br>Evasion</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>衣玖の帽子</td>
+				<td>Iku's Hat</td>
+				<td>3</td>
+				<td>50</td>
+				<td>回避 + 身軽<br>Evasion + Lightweight</td>
+				<td>回避「回」<br>Evasion</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>美しき緋の衣</td>
+				<td>Beautiful Scarlet Cloth</td>
+				<td>5</td>
+				<td>50</td>
+				<td>回避 + 浮遊系耐性30<br>Evasion + Flyer Defense 30%</td>
+				<td>回避「回」<br>Evasion</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			An Iku-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			Uh... the Evasion property is the only thing good about it.
+		</p>
+
+	<h3><a name="dragplate">Family Name: ドラゴンプレート / Dragon Plate</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>ドラゴンプレート</td>
+				<td>Dragon Plate</td>
+				<td>1</td>
+				<td>20</td>
+				<td>反撃 + 生命力増幅<br>Counter-attack + HP Amp</td>
+				<td>反撃「反」<br>Counter-attack</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>美鈴の帽子</td>
+				<td>Meiling's Hat</td>
+				<td>5</td>
+				<td>20</td>
+				<td>反撃 + 生命力増幅x2<br>Counter-attack + HP Amp x2</td>
+				<td>反撃「反」<br>Counter-attack</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>華厳明星</td>
+				<td>Glorious Morning Star</td>
+				<td>8</td>
+				<td>20</td>
+				<td>反撃 + 生命力増幅x3<br>Counter-attack + HP Amp x3</td>
+				<td>反撃「反」<br>Counter-attack</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Meiling-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I kinda like this armor, but only as a one-off armor when I need the early game tank property.
+		</p>
+
+	<h3><a name="grapes">Family Name: ぶどう / Grapes</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>ぶどう</td>
+				<td>Grapes</td>
+				<td>2</td>
+				<td>20</td>
+				<td>小食<br>Light Eater</td>
+				<td>小食「小」<br>Light Eater</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>穣子の帽子</td>
+				<td>Minoriko's Hat</td>
+				<td>6</td>
+				<td>20</td>
+				<td>小食<br>Light Eater</td>
+				<td>小食「小」<br>Light Eater</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>穀物神の帽子</td>
+				<td>Harvest God's Hat</td>
+				<td>10</td>
+				<td>20</td>
+				<td>小食 + 神系耐性30<br>Light Eater + Deity Defense 30%</td>
+				<td>小食「小」<br>Light Eater</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Minoriko-themed armor.<br>
+			And NO, YOU CAN'T EAT THE GRAPES OR THE FOOD ON THOSE.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I'd use this armor if I don't equip accessories with the 小食 property.
+		</p>
+
+	<h3><a name="moneybox">Family Name: 博麗神社の賽銭箱 / Hakurei Shrine Offering Box</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>博麗神社の賽銭箱</td>
+				<td>Hakurei Shrine Offering Box</td>
+				<td>1</td>
+				<td>20</td>
+				<td>賽銭 + 妖怪系耐性30 + 浮遊系耐性30<br>Offering + Youkai Defense 30% + Flyer Defense 30%</td>
+				<td>賽銭「賽」<br>Offering</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>守矢神社の賽銭箱</td>
+				<td>Moriya Shrine Offering Box</td>
+				<td>5</td>
+				<td>20</td>
+				<td>賽銭 + 神系耐性30 + 鬼系耐性30 + 天狗系耐性30 + 水生系耐性30<br>Offering + Deity Defense 30% + Oni Defense 30% + Tengu Defense 30% + Water Being Defense 30%</td>
+				<td>賽銭「賽」<br>Offering</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>命蓮寺の賽銭箱</td>
+				<td>Myouren Temple Offering Box</td>
+				<td>11</td>
+				<td>20</td>
+				<td>賽銭 + 耳系耐性30 + 幽霊系耐性30 + 魔法使い系耐性30<br>Offering + Kemono Defense 30% + Ghost Defense 30% + Magician Defense 30%</td>
+				<td>賽銭「賽」<br>Offering</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A location-themed armor.<br>
+			The types they defend against represent the beings that are usually around the shrines.<br>
+			Hakurei Shrine: Yukari<br>
+			Moriya Shrine: Nitori, Aya(yayaya), Kanako, Suwako, apparently Suika<br>
+			Myouren Temple: Byakuren, Murasa, Nazrin, Shou, Kogasa<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			It would make sense to use this as a general defense armor with maxed out revision and bolstering...<br>
+			...but it doesn't really have full defense against Utsuho.<br>
+			Also, Reimu doesn't maintain her offering box well, does she.<br>
+			While Sanae does... and Byakuren's is GOLD PLATED.
+		</p>
+
+	<h3><a name="ghosthat">Family Name: 額烏帽子 / Hitai-eboshi (Forehead Hat)</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>額烏帽子</td>
+				<td>Forehead Hat</td>
+				<td>7</td>
+				<td>10</td>
+				<td>幽霊系耐性30<br>Ghost Defense 30%</td>
+				<td>大食「大」<br>Big Eater</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>幽々子の帽子</td>
+				<td>Yuyuko's Hat</td>
+				<td>10</td>
+				<td>10</td>
+				<td>大食1 + 幽霊系耐性30 + 盗人系耐性30 + 浮遊系耐性30<br>Big Eater x1 + Ghost Defense 30% + Thief Defense 30% + Flyer Defense 30%</td>
+				<td>大食「大」<br>Big Eater</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>ギャストリドリーム</td>
+				<td>Ghastly Dream</td>
+				<td>20</td>
+				<td>10</td>
+				<td>大食2 + 幽霊系耐性40 + 盗人系耐性40 + 浮遊系耐性40<br>Big Eater x1 + Ghost Defense 40% + Thief Defense 40% + Flyer Defense 40%</td>
+				<td>大食「大」<br>Big Eater</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Yuyuko-themed armor.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			The base defense is tempting... however, the OH SO MANY 大食 property, totaling x3 at the Rank 3 form, kills it for me.<br>
+			The Japanese wiki says you need 7 小食 orbs to even negate the 大食.
+		</p>
+
+	<h3><a name="strawhat">Family Name: 麦わら帽子 / Straw Hat</a></h3>
+		<table id="armortable">
+			<tr>
+				<th>Rank</th>
+				<th>Name</th>
+				<th>Translation</th>
+				<th>Base Defense</th>
+				<th>Initial Bolstering Limit</th>
+				<th>Initial Properties</th>
+				<th>Pre-installed Orbs</th>
+				<th>Revisions to MAX</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>麦わら帽子</td>
+				<td>Straw Hat</td>
+				<td>1</td>
+				<td>15</td>
+				<td>生命力増幅x1<br>HP Amp x1</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr class="alt">
+				<td>2</td>
+				<td>諏訪子の帽子</td>
+				<td>Suwako's Hat</td>
+				<td>10</td>
+				<td>15</td>
+				<td>冬眠 + 生命力増幅x1<br>Hibernation + HP Amp x1</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>土着神の帽子</td>
+				<td>Indigenous God's Hat</td>
+				<td>20</td>
+				<td>15</td>
+				<td><b>親玉系耐性30</b> + 生命力増幅x2<br>Boss Defense 30% + HP Amp x2</td>
+				<td>NONE</td>
+				<td>Unidentified</td>
+			</tr>
+		</table>
+		<p>
+			A Suwako-themed armor.<br>
+			And there's Mishaguji-sama overflowing from under the hat in the 3rd form.<br>
+			Placeholder for Weapon Notes.
+		</p>
+		<h4>Personal Notes</h4>
+		<p>
+			I got this once, but it was in a 99F dungeon with no pink gates every 10 floors. I WANT IT AGAIN.<br>
+			sob
+		</p>
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+<hr />
+
+	<h1><a name="ARMORPLUS">Armor (Plus Expansion)</a></h1>
+
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+<hr />
+
+	<h1><a name="ACCESSORIES">Accessories (Vanilla)</a></h1>
+	<p class="intro">
+		In Japanese, they're actually お守り (amulets), but for convenience's sake, we'll call them accessories.
+	</p>
+	<h2>Negative Status Prevention Accessories</h2>
+		<table id="accessoriestable">
+			<tr>
+				<th>Name and Translation</th>
+				<th>Base Property</th>
+				<th>Orb 1</th>
+				<th>Orb 2</th>
+				<th>Orb 3</th>
+				<th>Effects Description</th>
+				<th>Personal Notes</th>
+			</tr>
+			<tr>
+				<td>お守り「無病息災」<br>Amulet "Good Health"</td>
+				<td>抗体<br>Antibody</td>
+				<td>抗体「抗」<br>Antibody</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Prevents Weakening/Power Down</td>
+				<td>You just have to avoid Medicine Traps and the purple pool tiles.<br>And destroy Medicine and Yamame enemies as fast as possible.</td>
+			</tr>
+			<tr class="alt">
+				<td>お守り「家内安全」<br>Amulet "Wife's Safety"</td>
+				<td>沈静<br>Calm</td>
+				<td>沈静「沈」<br>Calm</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Prevents Confusion</td>
+				<td>Great for facing Reisen head-on or if she's got the Surprised status by Kogasa.<br>An alternative is to not face her when attacking her.</td>
+			</tr>
+			<tr>
+				<td>お守り「合格祈願」<br>Amulet "Prayer for School Success"</td>
+				<td>不眠<br>Insomnia</td>
+				<td>不眠「不」<br>Insomnia</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Prevents Sleep</td>
+				<td>This is useful against Eirin's sleep arrow special, or against the Sleep status in general.<br>THE SLEEP STATUS IS A GAME KILLER.</td>
+			</tr>
+			<tr class="alt">
+				<td>額烏帽子<br>Forehead Hat?</td>
+				<td>NONE</td>
+				<td>増量「増」<br>Weight Gain</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>You get 10 extra Stamina Points when you eat or drink anything.</td>
+				<td>Akyuu-themed. VITAL for the Space Hungry The Ride dungeons in PLUS,<br>or if you want to replenish stamina and only have drinks.</td>
+			</tr>
+			<tr>
+				<td>厄除けお守り<br>Anti-Curse Amulet</td>
+				<td>NONE</td>
+				<td>厄除「除」<br>Anti-Curse</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Prevents equipment from being cursed.</td>
+				<td>You might want to use it against Hina enemies.<br>I prefer killing them fast.</td>
+			</tr>
+			<tr class="alt">
+				<td>謹製・みがわり人形<br>Humbly Made Substitution Doll</td>
+				<td>身代<br>Substitution</td>
+				<td>身代「身」<br>Substitution</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>When you die, you immediately respawn behind the enemy that dealt the blow with full HP. This item gets destroyed when that happens, though.</td>
+				<td>Alice-themed. I think it's vital too. If you happen to make mistakes, you can get a second chance.<br>Prevention is better than cure, however.</td>
+			</tr>
+			<tr>
+				<td>蜘蛛の巣<br>Spider Web</td>
+				<td>空振<br>Infrasonic</td>
+				<td>空振「空」<br>Infrasonic</td>
+				<td>EMPTY SLOT</td>
+				<td>NONE</td>
+				<td>You miss more often.</td>
+				<td>Yamame-themed. Apparently based on the accessory called "Tsuchigumo's Threads".<br>And if you equip it, it can't be unequipped.<br>SELL IT.</td>
+			</tr>
+			<tr class="alt">
+				<td>DC</td>
+				<td>大食<br>Big Eater</td>
+				<td>大食「大」<br>Big Eater</td>
+				<td>EMPTY SLOT</td>
+				<td>NONE</td>
+				<td>Increases Stamina Decay Rate</td>
+				<td>Yuyuko-themed.<br>SELL THIS PIECE OF JUNK.</td>
+			</tr>
+			<tr>
+				<td>厄をため込んだお守り<br>Misfortune-bearing Amulet</td>
+				<td>厄<br>Curse</td>
+				<td>厄「厄」<br>Curse</td>
+				<td>月人系特攻「月」<br>Lunarian Killer</td>
+				<td>神系耐性「神」<br>Deity Defense</td>
+				<td>Hina-themed.<br>Increases damage against Eirin and Kaguya and<br>Decreases damage dealt by Deities...<br>AT THE COST OF YOUR HP GOING DOWN BY 1 PER TURN.</td>
+				<td>The Curse property kills it for me.</td>
+			</tr>
+			<tr class="alt">
+				<td>ミニ八卦炉<br>Mini Hakkero</td>
+				<td>八卦<br>Barrage</td>
+				<td>八卦「ハ」<br>Barrage</td>
+				<td>魔法使い系耐性「魔」<br>Magician Defense</td>
+				<td>NONE</td>
+				<td>Marisa-themed.</td>
+				<td>I'm not the type of player who relies on Danmaku, so I don't use it often.</td>
+			</tr>
+			<tr>
+				<td>メイド帳の懐中時計<br>The Head Maid's Pocket Watch</td>
+				<td>NONE</td>
+				<td>小食「小」<br>Curse</td>
+				<td>NONE</td>
+				<td>NONE</td>
+				<td>Sakuya-themed.</td>
+				<td>This would be vital for dungeons into which you can't bring anything.</td>
+			</tr>
+			<tr class="alt">
+				<td>土蜘蛛ウィルス<br>Tsuchigumo Virus</td>
+				<td>老化<br>Aging</td>
+				<td>老化「老」<br>Aging</td>
+				<td>EMPTY SLOT</td>
+				<td>NONE</td>
+				<td>Yamame-themed.</td>
+				<td>NO THANKS.</td>
+			</tr>
+			<tr>
+				<td>鬼の杯<br>Grail of Oni</td>
+				<td>NONE</td>
+				<td>遠投「遠」<br>Long Throw</td>
+				<td>怪力「怪」<br>Superhuman Strength</td>
+				<td>NONE</td>
+				<td>Suika-themed.</td>
+				<td>Tempting, but I'd rather use the 必中 + 多段攻撃　+　お酒 trick.</td>
+			</tr>
+			<tr class="alt">
+				<td>歴史喰いの史書<br>History Eater's Scroll</td>
+				<td>NONE</td>
+				<td>苦難「苦」<br>Hardship</td>
+				<td>EMPTY SLOT</td>
+				<td>NONE</td>
+				<td>Keine-themed.</td>
+				<td>I have no reason to equip something that reduces your EXP by 1 EACH TURN.</td>
+			</tr>
+			<tr>
+				<td>不死者の灰<br>Ashes of an Immortal</td>
+				<td>焼却<br>Incineration</td>
+				<td>焼却「焼」<br>Incineration</td>
+				<td>爆発系耐性「爆」<br>Explosion Defense</td>
+				<td>EMPTY SLOT</td>
+				<td>Mokou-themed.</td>
+				<td>Should I install the 炎吸 orb to make it heal me?</td>
+			</tr>
+		</table>
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+<hr />
+
+	<h1><a name="ORBSVANILLA">Orbs (Vanilla)</a></h1>
+	<p class="intro">
+		These orbs exist between v1.00 to v1.33
+	</p>
+	<p class="intro">
+		These can be installed into a weapon if they have empty slots. The available slots can be seen on the top right window when highlighting a weapon.<br>
+		You can see the orbs the weapon already has by selecting it, holding the 'D' button [mapped by default into the S key], then pressing L/R [mapped by default into the W/E keys].<br>
+	</p>
+	<h2>Weapon Orbs</h2>
+	<h3>Something-killer Orbs</h3>
+		<table id="orbsvanillatable">
+			<tr>
+				<th>Name</th>
+				<th>Icon</th>
+				<th>Translation</th>
+				<th>Effects</th>
+			</tr>
+			<tr>
+				<td>妖怪系特攻</td>
+				<td>「妖」</td>
+				<td>Youkai Killer</td>
+				<td>Adds a percentage of damage dealt to Youkai-type enemies.<br>eg. Medicine, Wriggle, Kisume, etc.</td>
+			</tr>
+			<tr class="altd">
+				<td>浮遊系特効</td>
+				<td>「浮」</td>
+				<td>Flyer Killer</td>
+				<td>Adds a percentage of damage dealt to Flying enemies.<br>eg. anyone made flying with an uplift tile</td>
+			</tr>
+			<tr>
+				<td>神系特攻</td>
+				<td>「神」</td>
+				<td>Deity Killer</td>
+				<td>Adds a percentage of damage dealt to Deity-type enemies.<br>eg. Komachi, Eiki, Minoriko, Hina</td>
+			</tr>
+			<tr class="altd">
+				<td>幽霊系特攻</td>
+				<td>「幽」</td>
+				<td>Ghost Killer</td>
+				<td>Adds a percentage of damage dealt to Ghost-type enemies.<br>eg. Youmu, Yuyuko, Tojiko... and Mokou?</td>
+			</tr>
+			<tr>
+				<td>爆発系特攻</td>
+				<td>「爆」</td>
+				<td>Explosion Killer</td>
+				<td>Adds a percentage of damage dealt to Explosion-causing enemies.<br>eg. Utsuho, (Giant)Eirin</td>
+			</tr>
+			<tr class="altd">
+				<td>盗人系特攻</td>
+				<td>「盗」</td>
+				<td>Thief Killer</td>
+				<td>Adds a percentage of damage dealt to enemies that can steal your stuff.<br>eg. Yuyuko, Miyako</td>
+			</tr>
+			<tr>
+				<td>妖精系特攻</td>
+				<td>「精」</td>
+				<td>Fairy Killer</td>
+				<td>Adds a percentage of damage dealt to <b>Cirno</b>.<br>BOTH VERSIONS, NORMAL AND BOSS</td>
+			</tr>
+			<tr class="altd">
+				<td>水生系特攻</td>
+				<td>「水」</td>
+				<td>Water Being Killer</td>
+				<td>Adds a percentage of damage dealt to Water Beings:<br><b>Nitori, Senjunamako-tan, Murasa</b></td>
+			</tr>
+			<tr>
+				<td>鬼系特攻</td>
+				<td>「鬼」</td>
+				<td>Oni Killer</td>
+				<td>Adds a percentage of damage dealt to <b>Suika and Yuugi</b>, both Oni.</td>
+			</tr>
+			<tr class="altd">
+				<td>魔法使い系特攻</td>
+				<td>「魔」</td>
+				<td>Magician Killer</td>
+				<td>Adds a percentage of damage dealt to <b>Alice and Byakuren</b>.</td>
+			</tr>
+			<tr>
+				<td>月人系特攻</td>
+				<td>「月」</td>
+				<td>Lunarian Killer</td>
+				<td>Adds a percentage of damage dealt to Lunarians: <b>Eirin and Kaguya</b></td>
+			</tr>
+			<tr class="altd">
+				<td>耳系特攻</td>
+				<td>「耳」</td>
+				<td>Kemono Killer</td>
+				<td>Adds a percentage of damage dealt to anything with non-human ears.<br>eg. Tewi, Reisen, Mamizou</td>
+			</tr>
+			<tr>
+				<td>天狗系特攻</td>
+				<td>「狗」</td>
+				<td>Tengu Killer</td>
+				<td>Adds a percentage of damage dealt to <b>Aya and Hatate</b>.</td>
+			</tr>
+			<tr class="altd">
+				<td>天人系特攻</td>
+				<td>「人」</td>
+				<td>Celestial Killer</td>
+				<td>Adds a percentage of damage dealt to <b>Tenshi, a.k.a. Tenko (get it? 天子)</b>.</td>
+			</tr>
+		</table>
+	<h3>Other Orbs</h3>
+		<table id="orbsvanillatable">
+			<tr>
+				<th>Name</th>
+				<th>Icon</th>
+				<th>Translation</th>
+				<th>Effects</th>
+			</tr>
+			<tr>
+				<td>延長</td>
+				<td>「延」</td>
+				<td>Melee Range Extension</td>
+				<td>Extends the range of your melee attack by one unit/tile.<br>With one of these in a weapon, you can hit 2 tiles in front of you!</td>
+			</tr>
+			<tr class="altd">
+				<td>広範囲</td>
+				<td>「広」</td>
+				<td>Wide-range</td>
+				<td>
+					Widens your attack so you hit the 3 tiles in front of you<br>
+					[X][X][X]<br>
+					[ ][O][ ]<br>
+					O = you, X = affected area<br>
+					Install more to make it go even further! I mean, 2 makes this happen:<br>
+					[X][X][X]<br>
+					[X][O][X]<br>
+				</td>
+			</tr>
+			<tr>
+				<td>治癒</td>
+				<td>「治」</td>
+				<td>Healing</td>
+				<td>Heals HP every time you strike.<br>WARNING: DEPENDS ON ENEMY HP!<br>You get no healing if you go overkill.</td>
+			</tr>
+			<tr class="altd">
+				<td>加虐</td>
+				<td>「サ」</td>
+				<td>Sadism</td>
+				<td>For each orb installed, heals 1 HP every time you strike. STACKABLE.<br>Don't ask me about the weird name.</td>
+			</tr>
+			<tr>
+				<td>一撃死</td>
+				<td>「死」</td>
+				<td>One Shot One Kill</td>
+				<td>Conveys a chance of instantly killing an enemy.</td>
+			</tr>
+			<tr class="altd">
+				<td>必中</td>
+				<td>「必」</td>
+				<td>Accuracy</td>
+				<td>ALWAYS hits. Miss rate = 0%.<br>This ＋ お酒　＋　多段攻撃x4 = Comedy</td>
+			</tr>
+			<tr>
+				<td>破壊</td>
+				<td>「破」</td>
+				<td>Destruction</td>
+				<td>DESTROYS WALLS/ITEMS<br>Great for reaching secret rooms.<br>If you don't want to use the Berlin Mauer Spellcard, that is.</td>
+			</tr>
+			<tr class="altd">
+				<td>貫通</td>
+				<td>「貫」</td>
+				<td>Piercing</td>
+				<td>Conveys a chance that your attacks aren't affected by the enemy's defense.</td>
+			</tr>
+			<tr>
+				<td>発掘</td>
+				<td>「発」</td>
+				<td>Digging</td>
+				<td>If used on a glowing spot on the ground (Nazrin finds it)...<br>Digs something out of it. Good items, mostly.</td>
+			</tr>
+			<tr class="altd">
+				<td>遠離</td>
+				<td>「離」</td>
+				<td>Knockback</td>
+				<td>Conveys a chance of knocking your enemy back a few units/tiles.</td>
+			</tr>
+			<tr>
+				<td>砲撃</td>
+				<td>「砲」</td>
+				<td>Danmaku Extension</td>
+				<td>Increases the range of your Danmaku attacks.<br>Mostly noticeable with the 4th type<br>The one that spreads once it hits ONE enemy</td>
+			</tr>
+			<tr class="altd">
+				<td>解放</td>
+				<td>「解」</td>
+				<td>Release</td>
+				<td>With this you can attack around corners!<br>Actually, attacks go through walls.</td>
+			</tr>
+			<tr>
+				<td>多段攻撃</td>
+				<td>「多」</td>
+				<td>Multiple Attacks</td>
+				<td>Put this in your weapon to make it attack multiple times per attack.<br>Details <a href="#WAT">here</a></td>
+			</tr>
+			<tr class="altd">
+				<td>遺失</td>
+				<td>「遺」</td>
+				<td>Lost Thing</td>
+				<td>Conveys a chance of knocking an enemy's belongings away from her.<br>ESSENTIALLY an equivalent to FF's Mug command</td>
+			</tr>
+		</table>
+	<hr size="1" width="90%" />
+	<p>
+		<a name="WAT">Details about 多段攻撃</a><br>
+		Synergies [Assume 4 orbs are installed, totalling 10 hits]:<br>
+		<table id="explaintable">
+			<tr>
+				<th>Orb it Synergizes With</th>
+				<th>Effect</th>
+			</tr>
+			<tr>
+				<td>治癒/Healing</td>
+				<td>Effect applies every hit, diminishing effects each time.</td>
+			</tr>
+			<tr>
+				<td>貫通/Piercing</td>
+				<td>Each hit has that chance of proc'ing 貫通</td>
+			</tr>
+			<tr>
+				<td>一撃し/OSOK</td>
+				<td>Each hit has that chance of instantly killing your enemy</td>
+			</tr>
+			<tr>
+				<td>遠離/Knockback</td>
+				<td>Each hit has that chance of knocking your enemy back at the end.<br>I haven't tested this yet!</td>
+			</tr>
+			<tr>
+				<td>怪力/Superhuman Strength</td>
+				<td>I haven't tested this yet!</td>
+			</tr>
+			<tr>
+				<td>遺失/Lost Thing</td>
+				<td>I haven't tested this yet!</td>
+			</tr>
+			<tr>
+				<td>加虐/Sadism</td>
+				<td>Assume you put 9 of this orb in your weapon.<br>For each enemy you hit, you heal 10x9 HP! YAY.</td>
+			</tr>
+		</table>
+	</p>
+	<hr size="1" width="90%" />
+	<h2>Armor Orbs</h2>
+	<h3>Something-defense Orbs</h3>
+		<table id="orbsvanillatable">
+			<tr>
+				<th>Name</th>
+				<th>Icon</th>
+				<th>Translation</th>
+				<th>Effects</th>
+			</tr>
+			<tr>
+				<td>妖怪系耐性</td>
+				<td>「妖」</td>
+				<td>Youkai Defense</td>
+				<td>Reduces damage dealt by Youkai-type enemies by a certain percentage.<br>eg. Medicine, Wriggle, Kisume, etc.</td>
+			</tr>
+			<tr class="altd">
+				<td>浮遊系耐性</td>
+				<td>「浮」</td>
+				<td>Flyer Defense</td>
+				<td>Reduces damage dealt by flying enemies by a certain percentage.<br>eg. anyone made flying with an uplift tile</td>
+			</tr>
+			<tr>
+				<td>神系耐性</td>
+				<td>「神」</td>
+				<td>Deity Defense</td>
+				<td>Reduces damage dealt by Deity-type enemies by a certain percentage.<br>eg. Komachi, Eiki, Minoriko, Hina</td>
+			</tr>
+			<tr class="altd">
+				<td>幽霊系耐性</td>
+				<td>「幽」</td>
+				<td>Ghost Defense</td>
+				<td>Reduces damage dealt by Ghost-type enemies by a certain percentage.<br>eg. Youmu, Yuyuko, Tojiko... and Mokou?</td>
+			</tr>
+			<tr>
+				<td>爆発系耐性</td>
+				<td>「爆」</td>
+				<td>Explosion Defense</td>
+				<td>Reduces damage dealt by Explsion-causing enemies by a certain percentage.<br>eg. Utsuho, (Giant)Eirin</td>
+			</tr>
+			<tr class="altd">
+				<td>盗人系耐性</td>
+				<td>「盗」</td>
+				<td>Thief Defense</td>
+				<td>Reduces damage dealt by enemies that can steal your stuff by a certain percentage.<br>eg. Yuyuko, Miyako</td>
+			</tr>
+			<tr>
+				<td>妖精系耐性</td>
+				<td>「精」</td>
+				<td>Fairy Defense</td>
+				<td>Reduces damage dealt by <b>Cirno</b> by a certain percentage.<br>BOTH VERSIONS, NORMAL AND BOSS</td>
+			</tr>
+			<tr class="altd">
+				<td>水生系耐性</td>
+				<td>「水」</td>
+				<td>Water Being Defense</td>
+				<td>Reduces damage dealt by Water Beings by a certain percentage.<br>Water Beings: Nitori, Senjunamako-tan, Murasa</td>
+			</tr>
+			<tr>
+				<td>鬼系耐性</td>
+				<td>「鬼」</td>
+				<td>Oni Defense</td>
+				<td>Reduces damage dealt by <b>Suika and Yuugi</b> by a certain percentage.</td>
+			</tr>
+			<tr class="altd">
+				<td>魔法使い系耐性</td>
+				<td>「魔」</td>
+				<td>Magician Defense</td>
+				<td>Reduces damage dealt by <b>Alice and Byakuren</b> by a certain percentage.</td>
+			</tr>
+			<tr>
+				<td>月人系耐性</td>
+				<td>「月」</td>
+				<td>Lunarian Defense</td>
+				<td>Reduces damage dealt by <b>Eirin and Kaguya</b> by a certain percentage.</td>
+			</tr>
+			<tr class="altd">
+				<td>耳系耐性</td>
+				<td>「耳」</td>
+				<td>Kemono Defense</td>
+				<td>Reduces damage dealt by enemies with non-human ears by a certain percentage.<br>eg. Tewi, Reisen, Mamizou</td>
+			</tr>
+			<tr>
+				<td>天狗系耐性</td>
+				<td>「狗」</td>
+				<td>Tengu Defense</td>
+				<td>Reduces damage dealt by <b>Aya and Hatate</b> by a certain percentage.</td>
+			</tr>
+			<tr class="altd">
+				<td>天人系耐性</td>
+				<td>「人」</td>
+				<td>Celestial Defense</td>
+				<td>Reduces damage dealt by <b>Tenshi/Tenko</b> by a certain percentage.</td>
+			</tr>
+			<tr>
+				<td>半ボス系耐性</td>
+				<td>「半」</td>
+				<td>Mini-boss Defense</td>
+				<td>Reduces damage dealt by <b>Utsuho and Flandre</b> (Mini-bosses) by a certain percentage.</td>
+			</tr>
+			<tr class="altd">
+				<td>親玉系耐性</td>
+				<td>「親」</td>
+				<td>Boss Defense</td>
+				<td>Reduces damage dealt by <b>ALL BOSSES IN THE END OF ROUTES</b> by a certain percentage.</td>
+			</tr>
+		</table>
+	<h3>Other Orbs</h3>
+		<table id="orbsvanillatable">
+			<tr>
+				<th>Name</th>
+				<th>Icon</th>
+				<th>Translation</th>
+				<th>Effects</th>
+			</tr>
+			<tr>
+				<td>地雷名張</td>
+				<td>「地」</td>
+				<td>Mine Shield/EOD Armor Plating</td>
+				<td>Reduces damage from explosions... like from Patchy traps or (Giant) Eirin's Nuke Arrows.</td>
+			</tr>
+			<tr class="altd">
+				<td>防犯</td>
+				<td>「犯」</td>
+				<td>Security</td>
+				<td>When you step on something that removes your items, like a Kogasa/Gap trap...<br>Conveys a chance to prevent items from being removed.</td>
+			</tr>
+			<tr>
+				<td>変換</td>
+				<td>「変」</td>
+				<td>Conversion</td>
+				<td>You're immune to bad status changes. HOWEVER!<br>If you get hit by some bad status, you get damage based on a percentage of your MAX HP.<br>Equip more to reduce the percentage.</td>
+			</tr>
+			<tr class="altd">
+				<td>回避</td>
+				<td>「回」</td>
+				<td>Evasion</td>
+				<td>Conveys a chance that your enemy's attack will miss.<br>More orbs, higher evasion chance.</td>
+			</tr>
+			<tr>
+				<td>反撃</td>
+				<td>「反」</td>
+				<td>Counter Attack</td>
+				<td>Returns a percentage of an enemy's damage every time they hit.<br>More orbs, higher percentage</td>
+			</tr>
+			<tr class="altd">
+				<td>賽銭</td>
+				<td>「賽」</td>
+				<td>Offering</td>
+				<td>Conveys a chance that money will be produced every time you get hit.</td>
+			</tr>
+			<tr>
+				<td>吸血耐性</td>
+				<td>「吸」</td>
+				<td>Vampire Defense</td>
+				<td>When Remilia uses her special, your Power doesn't decrease.</td>
+			</tr>
+			<tr class="altd">
+				<td>被虐</td>
+				<td>「マ」</td>
+				<td>Masochism</td>
+				<td>Heals [number of this orb you have in your armor] HP every time you get hit.</td>
+			</tr>
+			<tr>
+				<td>記録</td>
+				<td>「記」</td>
+				<td>Record</td>
+				<td>Conveys a chance of preventing the Cirno Trap's effect from happening.<br>Means you won't forget the name of your items when you step on the trap.</td>
+			</tr>
+			<tr class="altd">
+				<td>冬眠</td>
+				<td>「冬」</td>
+				<td>Hibernation</td>
+				<td>Regens HP when sleeping.<br>INEFFECTIVE IF WEARING AN ACCESSORY WITH 不眠 IN IT. YOU CAN'T SLEEP.</td>
+			</tr>
+			<tr>
+				<td>軽減</td>
+				<td>「減」</td>
+				<td>Mitigation/Dampening</td>
+				<td>You know some enemy attacks that deal fixed damage? Like Tenshi's mini-earthquake?<br>This reduces the fixed damage.</td>
+			</tr>
+			<tr class="altd">
+				<td>身軽</td>
+				<td>「身」</td>
+				<td>Lightweight</td>
+				<td>The fewer items you have in your inventory, the higher your evasion rate!</td>
+			</tr>
+		</table>
+	<hr size="1" width="90%" />
+	<h2>Accessory Orbs</h2>
+		<table id="orbsvanillatable">
+			<tr>
+				<th>Name</th>
+				<th>Icon</th>
+				<th>Translation</th>
+				<th>Effects</th>
+			</tr>
+			<tr>
+				<td>地図</td>
+				<td>「地」</td>
+				<td>Map</td>
+				<td>SHOWS ALL ENEMY POSITIONS.<br>Use a 目茶 (Eyedrops) to make it see traps too!</td>
+			</tr>
+			<tr class="altd">
+				<td>抗体</td>
+				<td>「抗」</td>
+				<td>Antibody</td>
+				<td>Prevents Weakening/Power Down.</td>
+			</tr>
+			<tr>
+				<td>沈静</td>
+				<td>「沈」</td>
+				<td>Calm</td>
+				<td>Prevents Confusion... but not Hypnosis.</td>
+			</tr>
+			<tr class="altd">
+				<td>不眠</td>
+				<td>「眠」</td>
+				<td>Insomnia</td>
+				<td>Prevents the Sleep status</td>
+			</tr>
+			<tr>
+				<td>厄</td>
+				<td>「厄」</td>
+				<td>Curse</td>
+				<td>HP decreases by 1 every turn.<br>USAGE NOT RECOMMENDED</td>
+			</tr>
+			<tr class="altd">
+				<td>遠投</td>
+				<td>「遠」</td>
+				<td>Long Throw</td>
+				<td>Thrown items go through walls and enemies.<br>Great if you want to inflict a status effect on enemies in a line.<br>Throw some poison at them!</td>
+			</tr>
+			<tr>
+				<td>怪力</td>
+				<td>「怪」</td>
+				<td>Superhuman Strength</td>
+				<td>Essentially conveys a chance of doing critical hits, dealing more damage in one hit.</td>
+			</tr>
+			<tr class="altd">
+				<td>八卦</td>
+				<td>「ハ」</td>
+				<td>Barrage</td>
+				<td>Increases damage/power of Ofudas and Spellcards.</td>
+			</tr>
+			<tr>
+				<td>身代</td>
+				<td>「身」</td>
+				<td>Substitute</td>
+				<td>If you die, you immediately respawn with full health.<br>The item that has this equipped WILL disappear, however.<br>I don't know if this also applies to death by 0 Stamina.</td>
+			</tr>
+			<tr class="altd">
+				<td>幸福</td>
+				<td>「幸」</td>
+				<td>Good Luck</td>
+				<td>1 EXP per turn.<br>VITAL for early game.</td>
+			</tr>
+			<tr>
+				<td>増量</td>
+				<td>「増」</td>
+				<td>Weight Gain</td>
+				<td>You get 10 extra Stamina Points when you eat or drink anything.</td>
+			</tr>
+			<tr class="altd">
+				<td>焼却</td>
+				<td>「焼」</td>
+				<td>Incineration</td>
+				<td>You randomly get burnt with this equipped.</td>
+			</tr>
+			<tr>
+				<td>萃</td>
+				<td>「萃」</td>
+				<td>Density</td>
+				<td>YOU'RE A WALKING TARGET. Enemies automatically go towards your position.<br>Use this if you want to level up fast!</td>
+			</tr>
+			<tr class="altd">
+				<td>厄除</td>
+				<td>「除」</td>
+				<td>Good Luck Charm / Anti-Curse</td>
+				<td>Prevents your equipment from being cursed, but not from being rusted/degraded.<br>Might STILL want to use the Sardine Head spellcard just in case...</td>
+			</tr>
+			<tr>
+				<td>審判</td>
+				<td>「審」</td>
+				<td>Judgement / Overwatch</td>
+				<td>You steal, you die.<br>That's why I think it's incompatible with 遺失.</td>
+			</tr>
+			<tr class="altd">
+				<td>苦難</td>
+				<td>「苦」</td>
+				<td>Hardship / Trial</td>
+				<td>THE OPPOSITE OF 幸福<br>1 EXP is REMOVED per turn.<br>USAGE NOT RECOMMENDED.</td>
+			</tr>
+			<tr>
+				<td>不発</td>
+				<td>「不」</td>
+				<td>Misfire / Danmaku Jamming</td>
+				<td>Danmaku is disabled.<br>USAGE NOT RECOMMENDED.</td>
+			</tr>
+			<tr class="altd">
+				<td>老化</td>
+				<td>「老」</td>
+				<td>Aging</td>
+				<td>HP Regen is reduced.<br>USAGE NOT RECOMMENDED.</td>
+			</tr>
+			<tr>
+				<td>空振</td>
+				<td>「空」</td>
+				<td>Infrasonic?</td>
+				<td>Your hit rate goes DOWN.<br>USAGE NOT RECOMMENDED.</td>
+			</tr>
+			<tr class="altd">
+				<td>短縮</td>
+				<td>「縮」</td>
+				<td>Shortening</td>
+				<td>You recover from bad statuses in fewer turns.</td>
+			</tr>
+			<tr>
+				<td>念写</td>
+				<td>「念」</td>
+				<td>Spirit Photography</td>
+				<td>Conveys a chance of identifying an item RIGHT AFTER it's picked up.<br>Useful only in dungeons where items are unidentified by default!</td>
+			</tr>
+			<tr class="altd">
+				<td>武投</td>
+				<td>「武」</td>
+				<td>Bukinage</td>
+				<td>You throw items for increased damage!</td>
+			</tr>
+			<tr>
+				<td>広域</td>
+				<td>「域」</td>
+				<td>Spread</td>
+				<td>If you have partners when you heal an amount of HP, your partners get the same amount of healing.</td>
+			</tr>
+			<tr class="altd">
+				<td>奇跡</td>
+				<td>「奇」</td>
+				<td>Miracle</td>
+				<td>Conveys a chance that the item you consume stays in the inventory after consumption<br>There's an accessory that has this.<br>USE THAT instead of putting this orb in your custom accessory.</td>
+			</tr>
+			<tr>
+				<td>ボイス変化"幼女"</td>
+				<td>「幼」</td>
+				<td>Voice Change "Little Girl"</td>
+				<td>Changes Sanae's voice and dialogue into a younger version of her.<br>USAGE NOT RECOMMENDED<sup>[1]</sup></td>
+			</tr>
+			<tr class="altd">
+				<td>ボイス変化"模倣"</td>
+				<td>「模」</td>
+				<td>Voice Change "Imitation"</td>
+				<td>Changes Sanae's voice and dialogue into something like Mami Tomoe. "TIRO FINALE!"<br>USAGE NOT RECOMMENDED<sup>[1]</sup></td>
+			</tr>
+			<tr>
+				<td>ボイス変化"根暗"</td>
+				<td>「暗」</td>
+				<td>Voice Change "Dark"</td>
+				<td>Changes Sanae's voice and dialogue into those of a sadist-like person.<br>USAGE NOT RECOMMENDED<sup>[1]</sup></td>
+			</tr>
+		</table>
+	<h2>Universal Orbs</h2>
+	<p class=>
+		Meaning that they can be installed in a weapon or armor or accessory.
+	</p>
+		<table id="orbsvanillatable">
+			<tr>
+				<th>Name</th>
+				<th>Icon</th>
+				<th>Translation</th>
+				<th>Effects</th>
+			</tr>
+			<tr>
+				<td>小食</td>
+				<td>「小」</td>
+				<td>Light Eater</td>
+				<td>Reduces stamina decay rate, maximum -1 Stamina Point per 20 turns</td>
+			</tr>
+			<tr class="altd">
+				<td>大食</td>
+				<td>「大」</td>
+				<td>Big Eater</td>
+				<td>Increases Stamina decay rate, up to -1 Stamina Point per 5 turns.</td>
+			</tr>
+			<tr>
+				<td>重石</td>
+				<td>「重」</td>
+				<td>Heavyweight / Anchoring</td>
+				<td>Prevents displacement from most attacks. MOST.<br>Displacement-based traps STILL affect you.<br>Also, (Giant)Aya's and Boss Cirno's Specials still knock you back.</td>
+			</tr>
+			<tr class="altd">
+				<td>返還</td>
+				<td>「返」</td>
+				<td>Return</td>
+				<td>Equipment lost to environmental tiles will be found in the storehouse. I think.<br>I haven't tested it.</td>
+			</tr>
+			<tr>
+				<td>攻撃力増幅</td>
+				<td>「攻」</td>
+				<td>Attack Power Amp</td>
+				<td>Raises the weapon's attack power by 1.<br>I don't like using this.</td>
+			</tr>
+			<tr class="altd">
+				<td>防御力増幅</td>
+				<td>「防」</td>
+				<td>Defense Power Amp</td>
+				<td>Raises the armor's defense power by 1.<br>I don't like using this.</td>
+			</tr>
+			<tr>
+				<td>生命力増幅</td>
+				<td>「生」</td>
+				<td>HP Amp</td>
+				<td>Raises your HP by 20 each.<br>Some armors already have this as a property!</td>
+			</tr>
+			<tr class="altd">
+				<td>拡張</td>
+				<td>「拡」</td>
+				<td>Extension</td>
+				<td>Increases the number of orb slots available by 3...<br>The only time I use this is in dungeons into which I cannot bring ANYTHING. Like Route 7.</td>
+			</tr>
+			<tr>
+				<td>炎吸</td>
+				<td>「炎」</td>
+				<td>Fire Absorption</td>
+				<td>Attacking Mokou or fire tiles HEALS YOU. [unconfirmed]</td>
+			</tr>
+		</table>
+	<p>
+		Details about the -killer and Defense orbs come later.
+	</p>
+	<p class="return"><a href="#CONTENTS">BACK TO TOP</a></p>
+	<hr size="1" width="90%" />
+	<p>
+		[1] These orbs are actually neutral... but you waste one space by using them!!!
+	</p>
+<hr />
+	<h1><a name="ORBSPLUS">Orbs (Plus)</a></h1>
+	<p class="intro">
+		These are introduced in the PLUS version, namely Version 1.50.
+	</p>
+	<h2>Weapon Orbs</h2>
+</body>
+
+</html>

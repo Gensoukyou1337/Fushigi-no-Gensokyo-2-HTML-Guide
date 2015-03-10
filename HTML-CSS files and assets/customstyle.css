@@ -1,0 +1,234 @@
+﻿body
+{
+	background-color: #EFEFEF;
+}
+
+p
+{
+	font-family:"Courier New";
+	font-size:14px;
+}
+p.intro
+{
+	font-family:"Arial";
+	font-size:14px;
+}
+p.return
+{
+	/*ANOTHER CUSTOM STYLE!!*/
+	font-family:"Arial";
+	font-size:15px;
+	color:blue;
+	text-align:center;
+}
+
+a:link
+{
+	color: #0000FF;
+}
+a:visited
+{
+	color: #990099;
+}
+
+ol
+{
+	font-family:"Courier New";
+	font-size:13px;
+}
+ol.one
+{
+	list-style-type: hiragana-iroha;
+}
+ol.two
+{
+	list-style-type: lower-alpha;
+}
+ol.three
+{
+	list-style-type: lower-roman;
+}
+ol.four
+{
+	list-style-type: decimal;
+}
+
+table,th,td
+{
+	border:1px solid black;
+}
+#infotable th
+{
+	border:1px solid black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+#infotable td
+{
+	border:1px solid black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+#weaponstable th
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	color: white;
+	background-color: #990000;
+}
+#weaponstable tr
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FFFFFF;
+}
+#weaponstable tr.alt
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FF8888;
+}
+
+#armortable th
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	color: white;
+	background-color: #000099;
+}
+#armortable tr
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FFFFFF;
+}
+#armortable tr.alt
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #8888FF;
+}
+
+#accessoriestable th
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	color: white;
+	background-color: #009900;
+}
+#accessoriestable tr
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FFFFFF;
+}
+#accessoriestable tr.alt
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #88FF88;
+}
+
+#orbsvanillatable th
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FF57F4;
+}
+#orbsvanillatable tr
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FFC2FB;
+}
+#orbsvanillatable tr.altd
+{
+	text-align:center;
+	vertical-align:middle;
+	width:1000px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FFFFFF;
+}
+
+#explaintable th
+{
+	text-align:center;
+	vertical-align:middle;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #CCCCCC;
+}
+#explaintable td
+{
+	text-align:center;
+	vertical-align:middle;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:14px;
+	background-color: #FFFFFF;
+}
+
+spoilers
+{
+	/*CUSTOM STYLE!!*/
+	font-family:"Courier New";
+	font-size:14px;
+	color: #EEEEEE;
+}
+
+tablespoilers
+{
+	/*CUSTOM STYLE!!*/
+	font-family:"Courier New";
+	font-size:14px;
+	color: #DDFFDD;
+}
+
+tablespoilersalt
+{
+	/*CUSTOM STYLE!!*/
+	font-family:"Courier New";
+	font-size:14px;
+	color: #FFFFFF;
+}
+
+tablespoilersred
+{
+	/*CUSTOM STYLE!!*/
+	font-family:"Courier New";
+	font-size:14px;
+	color: #FFC2FB;
+}
